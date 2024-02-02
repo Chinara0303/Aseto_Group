@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- added google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- added font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- added boostrap -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <!-- added slick slider -->
+    <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- added css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-sm-2">
+                    <div class="logo">
+                        <img class="img-fluid" src="./assets/img/logo-pardis.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-lg-8 d-none d-lg-block">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li class="menu">
+                                <div>
+                                    <span>Products</span>
+                                    <i class="fa-solid fa-chevron-down fa-sm"></i>
+                                </div>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Oils</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Engine Oils</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Gear Oils</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Greases</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Vehicle Care</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bike</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Marine</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Additives</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li class="menu">
+                                <div>
+                                    <span>Areas of use</span>
+                                    <i class="fa-solid fa-chevron-down fa-sm"></i>
+                                </div>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">car</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Vintage cars</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Motorcycle</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bicycle</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Garden</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Motorhome</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Everyday helper</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-sm-10">
+                    <div class="right-area ">
+                        <div class="search-button">
+                            <button type="button">
+                                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                            </button>
+                        </div>
+                        <div class="languages d-lg-block d-none">
+                            <ul>
+                                <li>
+                                    <img src="./assets/img/fr_fr.gif" alt="">
+                                </li>
+                                <li>
+                                    <img src="./assets/img/fa_ir.gif" alt="">
+                                </li>
+                                <li>
+                                    <img src="./assets/img/en_gb.gif" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="burger-menu d-lg-none d-block">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+
+                    <div class="search-area">
+                        <i class="fa-solid fa-xmark fa-xl"></i>
+                        <p>Start typing and press Enter to search or ESC to close</p>
+                        <form action="#">
+                            <input type="text" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-side d-lg-none d-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="logo">
+                                <img class="img-fluid" src="./assets/img/logo-pardis.png" alt="logo">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="close-icon" src="./assets/img/x-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border"></div>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="menu">
+                        <div>
+                            <span>Products</span>
+                            <i class="fa-solid fa-chevron-down fa-sm open-submenu"></i>
+                        </div>
+                        <div class="submenu d-none">
+                            <ul>
+                                <li>
+                                    <a href="#">Oils</a>
+                                </li>
+                                <li>
+                                    <a href="#">Engine Oils</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gear Oils</a>
+                                </li>
+                                <li>
+                                    <a href="#">Greases</a>
+                                </li>
+                                <li>
+                                    <a href="#">Vehicle Care</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bike</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marine</a>
+                                </li>
+                                <li>
+                                    <a href="#">Additives</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <div>
+                            <span>Areas of use</span>
+                            <i class="fa-solid fa-chevron-down fa-sm open-submenu"></i>
+                        </div>
+                        <div class="submenu d-none">
+                            <ul>
+                                <li>
+                                    <a href="#">car</a>
+                                </li>
+                                <li>
+                                    <a href="#">Vintage cars</a>
+                                </li>
+                                <li>
+                                    <a href="#">Motorcycle</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bicycle</a>
+                                </li>
+                                <li>
+                                    <a href="#">Garden</a>
+                                </li>
+                                <li>
+                                    <a href="#">Motorhome</a>
+                                </li>
+                                <li>
+                                    <a href="#">Everyday helper</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div class="slider-area">
+                <div class="slider" style="background-image: url('./assets/img/slide1.jpg');">
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus tempore.</p>
+                        <a href="#">See Products</a>
+                    </div>
+                </div>
+                <div class="slider" style="background-image: url('./assets/img/slide02.jpg');">
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus tempore.</p>
+                        <a href="#">See Products</a>
+                    </div>
+                </div>
+                <div class="slider" style="background-image: url('./assets/img/slide3.jpg');">
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus tempore.</p>
+                        <a href="#">See Products</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-products">
+            <div class="container">
+                <div class="headline">
+                    <h4 class="title">Our Products</h4>
+                    </p>
+                </div>
+                <div class="tab-menu">
+                    <div data-index="1" class="tab-menu-heading active">
+                        <p>Ən çox satılanlar</p>
+                    </div>
+                    <div data-index="2" class="tab-menu-heading">
+                        <p>Son əlavə olunanlar</p>
+                    </div>
+                    <div data-index="3" class="tab-menu-heading">
+                        <p>Endirimli məhsullar</p>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+                <div class="fixed-modal d-none">
+                    <div class="product-modal ">
+                        <div class="modal-area d-flex">
+                            <img class="close-icon" src="./assets/img/x-icon.png" alt="">
+                            <div class="img">
+                                <img src="./assets/img/featured-products/2011_Top_Tec_4200_5W_30_5l_2c63.png" alt="">
+                            </div>
+                            <div class="information">
+                                <h2>Hydraulik Oil HLP 46</h2>
+                                <div class="prices">
+                                    <div class="discount d-flex align-items-center">
+                                        <del class="text-muted">20.00</del>
+                                        <p>50% OFF</p>
+                                    </div>
+                                    <div class="native-price">
+                                        <span>10.00</span>
+                                        <span>$</span>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <p>Product details</p>
+                                    <p class="description">Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem Ipsum has been the
+                                        industrys standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to
+                                        make a type specimen book.</p>
+                                </div>
+                                <div class="box-info">
+                                    <span>Avialibility:</span>
+                                    <span>In Stock</span>
+                                </div>
+                                <div class="box-info">
+                                    <span>Container-type:</span>
+                                    <span class="container-type">Container</span>
+                                </div>
+                                <div class="box-info">
+                                    <span>SKU:</span>
+                                    <span class="sku">2345</span>
+                                    <span class="container-content">1L</span>
+                                </div>
+                                <div class="container-contents">
+                                    <p>Container contents</p>
+                                    <div class="buttons">
+                                        <button type="button">1L</button>
+                                        <button type="button">4L</button>
+                                        <button type="button">5L</button>
+                                        <button type="button">20L</button>
+                                        <button type="button">60L</button>
+                                        <button type="button">1000L</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div data-index="1" class="products-area content">
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/1117_Hydraulik__l_HLP_46_1l_e5b1.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Hydraulic oil HLP 46</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/2011_Top_Tec_4200_5W_30_5l_2c63.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Top Tec 4200 5W 30</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/2020___l_Verlust_Stop_300ml_d8d1.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Verlust Stop</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/20246_Mehrzweckfett_400g_a196.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Mehrzweckfett</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/22094_Keramikpaste_Pinseldose_250g_3e74.jpg"
+                                alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Keramikpaste Pinseldose</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/25086_Marine_2T_Motor_Oil_250ml_7b7c.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Marine 2T Motor Oil</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/3640_Doppelkupplungsgetriebe__l_8100_1l_1d3c.png"
+                                alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Doppelkupplungsgetriebe Oil 8100</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/5129_Motorsystemreiniger_Benzin_300ml_e1cb.jpg"
+                                alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Motorsystemreiniger Benzin</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/6052_Bike_Ketten__l_Wet_Lube_100ml_21de.png"
+                                alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Bike Ketten Oil Wet Lube</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/6053_Bike_Cleaner_1l_844a.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Bike Cleaner</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div data-index="2" class="products-area content d-none">
+
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/2011_Top_Tec_4200_5W_30_5l_2c63.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Top Tec 4200 5W 30</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/1117_Hydraulik__l_HLP_46_1l_e5b1.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Hydraulic oil HLP 46</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/20246_Mehrzweckfett_400g_a196.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Mehrzweckfett</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/2020___l_Verlust_Stop_300ml_d8d1.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Verlust Stop</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/25086_Marine_2T_Motor_Oil_250ml_7b7c.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Marine 2T Motor Oil</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/22094_Keramikpaste_Pinseldose_250g_3e74.jpg"
+                                alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Keramikpaste Pinseldose</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/3640_Doppelkupplungsgetriebe__l_8100_1l_1d3c.png"
+                                alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Doppelkupplungsgetriebe Oil 8100</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/6052_Bike_Ketten__l_Wet_Lube_100ml_21de.png"
+                                alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Bike Ketten Oil Wet Lube</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/6053_Bike_Cleaner_1l_844a.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Bike Cleaner</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/5129_Motorsystemreiniger_Benzin_300ml_e1cb.jpg"
+                                alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Motorsystemreiniger_Benzin</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div data-index="3" class="products-area content d-none">
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/2020___l_Verlust_Stop_300ml_d8d1.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Verlust Stop</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/20246_Mehrzweckfett_400g_a196.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Mehrzweckfett</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/22094_Keramikpaste_Pinseldose_250g_3e74.jpg"
+                                alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Keramikpaste Pinseldose</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/25086_Marine_2T_Motor_Oil_250ml_7b7c.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Marine 2T Motor Oil</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/3640_Doppelkupplungsgetriebe__l_8100_1l_1d3c.png"
+                                alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Doppelkupplungsgetriebe Oil 8100</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/2011_Top_Tec_4200_5W_30_5l_2c63.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Top Tec 4200 5W 30</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/5129_Motorsystemreiniger_Benzin_300ml_e1cb.jpg"
+                                alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Motorsystemreiniger_Benzin</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/1117_Hydraulik__l_HLP_46_1l_e5b1.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Hydraulic oil HLP 46</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/6052_Bike_Ketten__l_Wet_Lube_100ml_21de.png"
+                                alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Bike Ketten Oil Wet Lube</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/featured-products/6053_Bike_Cleaner_1l_844a.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Bike Cleaner</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <img class="animate-img " src="./assets/img/oil-svgrepo-com.svg" alt=""> -->
+            </div>
+        </section>
+
+        <section id="categories">
+            <div class="headline">
+                <h4 class="title">Products Group</h4>
+                <p class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, obcaecati.
+                </p>
+            </div>
+            <div class="categories-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="category">
+                                <a href="#">
+                                    <img src="./assets/img/categories/additive.jpg" alt="">
+                                    <p class="cat-name">Additives</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="category">
+                                <a href="#">
+                                    <img src="./assets/img/categories/garden.jpg" alt="">
+                                    <p class="cat-name">Garden</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="category">
+                                <a href="#">
+                                    <img src="./assets/img/categories/gear-oils.jpg" alt="">
+                                    <p class="cat-name">Gear oils</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="category">
+                                <a href="#">
+                                    <img src="./assets/img/categories/greases.jpg" alt="">
+                                    <p class="cat-name">Greases</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="category">
+                                <a href="#">
+                                    <img src="./assets/img/categories/marine.jpg">
+                                    <p class="cat-name">Marine</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="category">
+                                <a href="#">
+                                    <img src="./assets/img/categories/motorcycle.jpg" alt="">
+                                    <p class="cat-name">Motorcycle</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="category">
+                                <a href="#">
+                                    <img src="./assets/img/categories/oils.jpg" alt="">
+                                    <p class="cat-name">Oils</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="category">
+                                <a href="#">
+                                    <img src="./assets/img/categories/bike.jpg" alt="">
+                                    <p class="cat-name">Bike</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="areas-of-use">
+            <div class="container">
+                <div class="headline">
+                    <h4 class="title">Areas of Use</h4>
+                    <p class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, obcaecati.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="info">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea accusantium voluptatibus
+                                molestias, animi eos repellat? Cumque similique illo nulla fugit? Dolore, nemo.
+                                Accusantium fugit autem quidem, corporis quae velit ad, similique nulla maiores
+                                provident corrupti ex at nisi facere libero.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, suscipit
+                                molestias! Quae ea pariatur, ducimus modi, ipsam laboriosam, asperiores rem error
+                                expedita quisquam iste alias minima recusandae nihil vero voluptates.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam odit qui, excepturi
+                                corrupti eum vero quam esse aliquam quidem, commodi modi eos! Necessitatibus numquam
+                                quasi ratione voluptate nisi nesciunt fuga, rem sunt consequuntur repellat veritatis ex
+                                sed, atque consequatur ullam suscipit tenetur laboriosam vel nemo praesentium. Veniam
+                                sunt fugit laborum.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="#">Cars</a>
+                                    <img class="img" src="./assets/img/areas-of-use/cars.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">classic Cars</a>
+                                    <img class="img" src="./assets/img/areas-of-use/classic cars.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">marine</a>
+                                    <img class="img" src="./assets/img/areas-of-use/marine.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">motorcycle</a>
+                                    <img class="img" src="./assets/img/areas-of-use/motor.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">motorhome</a>
+                                    <img class="img" src="./assets/img/areas-of-use/motorhome.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">bike</a>
+                                    <img class="img" src="./assets/img/areas-of-use/bike.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">garden</a>
+                                    <img class="img" src="./assets/img/areas-of-use/garden.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">everyday-helpers</a>
+                                    <img class="img" src="./assets/img/areas-of-use/everyday-helpers.webp" alt="">
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<!-- added slick slider js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- added js -->
+<script src="./assets/js/layout.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</html>

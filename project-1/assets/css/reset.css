@@ -1,0 +1,41 @@
+/* reset */
+ul,
+li {
+  list-style: none;
+}
+p{
+  margin: 0;
+}
+:root {
+  /* font-sizes */
+  --fs-1: 1rem;
+  --fs-2: 2rem;
+  --fs-3: 3rem;
+  --fs-4: 3.6rem;
+  --fs-5:1.2rem;
+  --fs-6:2.25rem;
+  --fs-10:10rem;
+  --fs-12:12rem;
+  --fs-18: 18rem;
+
+
+  /* colors */
+  --main-color: #4F6475;
+  --white: #fff;
+  --black: #000;
+  --border-color:#e2e1e1a8;
+  --dark:hsl(0, 0%, 0%, 0.8);
+  --orange: #FDB813;
+
+
+  /* font-family */
+  --oswald: "Oswal", sans-serif;
+  --rubik: "Rubik", sans-serif;
+
+  
+  /*  transition */
+  --transition-1: all .3s ease-in-out;
+
+  /* padding */
+  --section-padding:4rem;
+}
