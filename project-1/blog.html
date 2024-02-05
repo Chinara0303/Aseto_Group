@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- added google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- added font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- added boostrap -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <!-- added css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-sm-2">
+                    <div class="logo">
+                        <img class="img-fluid" src="./assets/img/logo-pardis.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-lg-8 d-none d-lg-block">
+                    <nav class="navbar-area">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="menu">
+                                <div>
+                                    <span>Products</span>
+                                    <i class="fa-solid fa-chevron-down fa-sm"></i>
+                                </div>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="category.html">Oils</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">Engine Oils</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">Gear Oils</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">Greases</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">Vehicle Care</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">Bike</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">Marine</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">Additives</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li class="menu">
+                                <div>
+                                    <span>Areas of use</span>
+                                    <i class="fa-solid fa-chevron-down fa-sm"></i>
+                                </div>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="areas-of-use.html">car</a>
+                                        </li>
+                                        <li>
+                                            <a href="areas-of-use.html">Vintage cars</a>
+                                        </li>
+                                        <li>
+                                            <a href="areas-of-use.html">Motorcycle</a>
+                                        </li>
+                                        <li>
+                                            <a href="areas-of-use.html">Bicycle</a>
+                                        </li>
+                                        <li>
+                                            <a href="areas-of-use.html">Garden</a>
+                                        </li>
+                                        <li>
+                                            <a href="areas-of-use.html">Motorhome</a>
+                                        </li>
+                                        <li>
+                                            <a href="areas-of-use.html">Everyday helper</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-sm-10">
+                    <div class="right-area ">
+                        <div class="search-button">
+                            <button type="button">
+                                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                            </button>
+                        </div>
+                        <div class="languages d-lg-block d-none">
+                            <ul>
+                                <li>
+                                    <img src="./assets/img/fr_fr.gif" alt="">
+                                </li>
+                                <li>
+                                    <img src="./assets/img/fa_ir.gif" alt="">
+                                </li>
+                                <li>
+                                    <img src="./assets/img/en_gb.gif" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="burger-menu d-lg-none d-block">
+                            <div class="line"></div>
+                            <div class="line second-line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+
+                    <div class="search-area">
+                        <i class="fa-solid fa-xmark fa-xl"></i>
+                        <p>Start typing and press Enter to search or ESC to close</p>
+                        <form action="#">
+                            <input type="text" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-side d-lg-none d-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="logo">
+                                <img class="img-fluid" src="./assets/img/logo-pardis.png" alt="logo">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="close-icon" src="./assets/img/x-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="border"></div>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="menu">
+                        <div>
+                            <span>Products</span>
+                            <i class="fa-solid fa-chevron-down fa-sm open-submenu"></i>
+                        </div>
+                        <div class="submenu d-none">
+                            <ul>
+                                <li>
+                                    <a href="category.html">Oils</a>
+                                </li>
+                                <li>
+                                    <a href="category.html">Engine Oils</a>
+                                </li>
+                                <li>
+                                    <a href="category.html">Gear Oils</a>
+                                </li>
+                                <li>
+                                    <a href="category.html">Greases</a>
+                                </li>
+                                <li>
+                                    <a href="category.html">Vehicle Care</a>
+                                </li>
+                                <li>
+                                    <a href="category.html">Bike</a>
+                                </li>
+                                <li>
+                                    <a href="category.html">Marine</a>
+                                </li>
+                                <li>
+                                    <a href="category.html">Additives</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <div>
+                            <span>Areas of use</span>
+                            <i class="fa-solid fa-chevron-down fa-sm open-submenu"></i>
+                        </div>
+                        <div class="submenu d-none">
+                            <ul>
+                                <li>
+                                    <a href="areas-of-use.html">car</a>
+                                </li>
+                                <li>
+                                    <a href="areas-of-use.html">Vintage cars</a>
+                                </li>
+                                <li>
+                                    <a href="areas-of-use.html">Motorcycle</a>
+                                </li>
+                                <li>
+                                    <a href="areas-of-use.html">Bicycle</a>
+                                </li>
+                                <li>
+                                    <a href="areas-of-use.html">Garden</a>
+                                </li>
+                                <li>
+                                    <a href="areas-of-use.html">Motorhome</a>
+                                </li>
+                                <li>
+                                    <a href="areas-of-use.html">Everyday helper</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+                <div class="contact-area">
+                    <i class="fa-regular fa-envelope fa-lg"></i>
+                    <a class="content" href="email">pardis@gmail.com</a>
+                </div>
+                <div class="contact-area">
+                    <i class="fa-solid fa-phone-volume fa-lg"></i>
+                    <a class="content" href="tel:1234567">11234567</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div class="container">
+                <div class="breadcrumb-area">
+                    <p class="section-name">Blog</p>
+                    <p>
+                        <span>Home</span>
+                        <span>/</span>
+                        <span class="section-name">Blog</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="blogs">
+            <div class="container">
+                <div class="headline">
+                    <div class="title">All blogs</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="blog-box">
+                            <div class="img">
+                                <a href="#">
+                                    <img class="img-fluid"
+                                        src="./assets/img/blogs/Industrial-hydraulic-oil_thumbnail.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="top">
+                                    <p class="date-time">5 Feb 2024</p>
+                                    <p class="cat-name">Engine oil</p>
+                                </div>
+                                <a href="#" class="blog-name">Industrial hydraulic oil </a>
+                                <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
+                                    fugiat?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-box">
+                            <div class="img">
+                                <a href="#">
+                                    <img class="img-fluid"
+                                        src="./assets/img/blogs/Industrial-hydraulic-oil_thumbnail.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="top">
+                                    <p class="date-time">5 Feb 2024</p>
+                                    <p class="cat-name">Engine oil</p>
+                                </div>
+                                <a href="#" class="blog-name">Industrial hydraulic oil </a>
+                                <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
+                                    fugiat?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-box">
+                            <div class="img">
+                                <a href="#">
+                                    <img class="img-fluid"
+                                        src="./assets/img/blogs/Industrial-hydraulic-oil_thumbnail.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="top">
+                                    <p class="date-time">5 Feb 2024</p>
+                                    <p class="cat-name">Engine oil</p>
+                                </div>
+                                <a href="#" class="blog-name">Industrial hydraulic oil </a>
+                                <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
+                                    fugiat?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-box">
+                            <div class="img">
+                                <a href="#">
+                                    <img class="img-fluid"
+                                        src="./assets/img/blogs/Industrial-hydraulic-oil_thumbnail.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="top">
+                                    <p class="date-time">5 Feb 2024</p>
+                                    <p class="cat-name">Engine oil</p>
+                                </div>
+                                <a href="#" class="blog-name">Industrial hydraulic oil </a>
+                                <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
+                                    fugiat?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-box">
+                            <div class="img">
+                                <a href="#">
+                                    <img class="img-fluid"
+                                        src="./assets/img/blogs/Industrial-hydraulic-oil_thumbnail.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="top">
+                                    <p class="date-time">5 Feb 2024</p>
+                                    <p class="cat-name">Engine oil</p>
+                                </div>
+                                <a href="#" class="blog-name">Industrial hydraulic oil </a>
+                                <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
+                                    fugiat?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-box">
+                            <div class="img">
+                                <a href="#">
+                                    <img class="img-fluid"
+                                        src="./assets/img/blogs/Industrial-hydraulic-oil_thumbnail.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="top">
+                                    <p class="date-time">5 Feb 2024</p>
+                                    <p class="cat-name">Engine oil</p>
+                                </div>
+                                <a href="#" class="blog-name">Industrial hydraulic oil </a>
+                                <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
+                                    fugiat?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-box">
+                            <div class="img">
+                                <a href="#">
+                                    <img class="img-fluid"
+                                        src="./assets/img/blogs/Industrial-hydraulic-oil_thumbnail.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="top">
+                                    <p class="date-time">5 Feb 2024</p>
+                                    <p class="cat-name">Engine oil</p>
+                                </div>
+                                <a href="#" class="blog-name">Industrial hydraulic oil </a>
+                                <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
+                                    fugiat?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-box">
+                            <div class="img">
+                                <a href="#">
+                                    <img class="img-fluid"
+                                        src="./assets/img/blogs/Industrial-hydraulic-oil_thumbnail.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="top">
+                                    <p class="date-time">5 Feb 2024</p>
+                                    <p class="cat-name">Engine oil</p>
+                                </div>
+                                <a href="#" class="blog-name">Industrial hydraulic oil </a>
+                                <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
+                                    fugiat?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-box">
+                            <div class="img">
+                                <a href="#">
+                                    <img class="img-fluid"
+                                        src="./assets/img/blogs/Industrial-hydraulic-oil_thumbnail.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="top">
+                                    <p class="date-time">5 Feb 2024</p>
+                                    <p class="cat-name">Engine oil</p>
+                                </div>
+                                <a href="#" class="blog-name">Industrial hydraulic oil </a>
+                                <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
+                                    fugiat?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </section>
+    </main>
+    <a href="javascript:void(0)" id="scroll-to-top" class="hover-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="logo">
+                        <img class="img-fluid" src="./assets/img/logo-pardis.png" alt="">
+                    </div>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti rem, quia
+                        ut eveniet pariatur laboriosam veritatis odit maiores sint?</p>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram fa-xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook fa-xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-whatsapp fa-xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin fa-xl"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <p class="text-title">QUICK LINKS</p>
+                    <ul class="quick-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <p class="text-title">Join us</p>
+                    <form action="#">
+                        <input type="text" placeholder="Enter email">
+                        <button type="submit"><i class="fa-regular fa-paper-plane fa-xl"></i></button>
+                    </form>
+
+                    <div class="contact-area">
+                        <i class="fa-regular fa-envelope fa-lg"></i>
+                        <a class="content" href="email">pardis@gmail.com</a>
+                    </div>
+                    <div class="contact-area">
+                        <i class="fa-solid fa-phone-volume fa-lg"></i>
+                        <a class="content" href="tel:1234567">11234567</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>2024©</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- added js -->
+<script src="./assets/js/layout.js"></script>
+
+</html>

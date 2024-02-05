@@ -1,0 +1,127 @@
+#intro{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    font-family: var(--oswald);
+    padding-block: var(--section-padding);
+    background-color: var(--main-color);
+}
+#intro .breadcrumb-area{
+    color: var(--main-color);
+    margin: 4% 0;
+    text-transform: capitalize;
+    color: var(--white);
+}
+#intro .breadcrumb-area p:nth-child(1){
+    font-size: var(--fs-2);
+}
+
+#intro .breadcrumb-area p:nth-child(2){
+    font-size: var(--fs-5);
+}
+
+
+#blogs {
+    padding-block: var(--section-padding);
+}
+
+#blogs .row {
+    padding: 50px 0;
+}
+
+#blogs .blog-box {
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+#blogs .blog-box .desc {
+    padding: 20px;
+    position: relative;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+}
+
+#blogs .blog-box .img img {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#blogs .blog-box .desc .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--fs-1);
+    font-family: var(--rubik);
+    color: var(--black);
+}
+
+#blogs .blog-box .desc .top .cat-name {
+    color: var(--span-color);
+    text-transform: capitalize;
+}
+
+#blogs .blog-box .desc .blog-name {
+    font-weight: bold;
+    font-size: var(--fs-1);
+    color: var(--main-color);
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    transition: var(--transition-1);
+}
+
+#blogs .blog-box .desc .blog-name:hover {
+    color: var(--orange);
+}
+
+#blogs .blog-box .desc .info {
+    color: var(--black);
+    font-weight: 600;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-item .page-link{
+    border-radius: 50% !important;
+    color: var(--white);
+    background-color: var(--main-color);
+    font-size: 18px;
+    transition: var(--transition-1);
+}
+.page-item .page-link:hover{
+    background-color: var(--orange);
+    color: var(--main-color);
+}
+
+.page-link:focus{
+    box-shadow: none !important;
+}
+/* .headline .title {
+    font-size: var(--fs-6) !important;
+}
+
+.headline .title::before {
+    left: 0 !important;
+    width: 17%;
+}
+
+.headline .title::after {
+    right: 0 !important;
+    width: 17%;
+} */
+.headline {
+    font-family: var(--oswald);
+    font-weight: 600;
+    font-size: var(--fs-1);
+}
+
+.headline .title {
+    color: var(--orange);
+    font-size: var(--fs-3);
+    font-weight: 600;
+    position: relative;
+    text-transform: capitalize;
+}

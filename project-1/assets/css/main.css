@@ -1,3 +1,4 @@
+
  /* section intro */
  #intro {
      overflow: hidden;
@@ -68,10 +69,10 @@
      position: relative;
  }
 
- .headline .title:before {
+ .headline .title::before {
      content: '';
      position: absolute;
-     top: -1px;
+     top: 1px;
      left: 27%;
      background-color: var(--orange);
      width: 7%;
@@ -81,7 +82,7 @@
  .headline .title::after {
      content: '';
      position: absolute;
-     top: 90%;
+     top: 88%;
      right: 27%;
      background-color: var(--orange);
      width: 7%;
@@ -142,7 +143,7 @@
 
  #our-products .products-area .product .information .category-name {
      text-transform: capitalize;
-     color: #a5a5a5a8;
+     color: var(--span-color);
  }
 
  #our-products .products-area .product .information .learn-more-area {
@@ -222,13 +223,13 @@
      margin: 10px 0 !important;
  }
 
-#our-products .slick-slide {
+ #our-products .slick-slide {
      width: 256px !important;
  }
 
  #our-products .slick-track {
      width: 2780px !important;
- } 
+ }
 
  .fixed-modal {
      position: fixed;
@@ -280,7 +281,7 @@
      right: 0;
      bottom: 0;
      background-color: rgba(0, 0, 0, 0.5);
-     z-index: 2;
+     z-index: 4;
      cursor: pointer;
 
  }
@@ -492,7 +493,7 @@
      font-weight: 600;
      font-size: var(--fs-5);
      text-transform: capitalize;
-     clip-path:polygon(69% 27%, 100% 51%, 68% 72%, 0 72%, 0 27%);
+     clip-path: polygon(69% 27%, 100% 51%, 68% 72%, 0 72%, 0 27%);
  }
 
  #areas-of-use .swiper-slide:hover a {
@@ -507,7 +508,7 @@
  }
 
  #areas-of-use a:hover {
-    padding-right:50px;
+     padding-right: 50px;
  }
 
  #areas-of-use .row {
@@ -521,41 +522,124 @@
  }
 
 
- @media (max-width:576px) {
-    #intro .slider-area .slider{
-        height: 80vh !important;
-    }
-    #intro .slider-area .slider .content{
-        margin: 55% auto !important;
-    }
-    #intro .slider-area .slider .content p{
-        width: 100% !important;
-        font-size: var(--fs-1);
-    }
-    #intro .slider-area .slider .content a{
-        width: 50% !important;
-        font-size: var(--fs-1);
-    }
+ /* blog */
+ #blog {
+     padding-block: var(--section-padding);
+ }
 
-    .headline .title{
-        font-size: var(--fs-6) !important;
-    }
-    .headline .title::before{
-        left: 0 !important;
-        width: 17%;
-    }
-    .headline .title::after{
-        right: 0 !important;
-        width: 17%;
-    }
-    #our-products .slick-prev, .slick-next{
-        display: none !important;
-    }
-    #our-products .tab-menu{
-        margin-top: 40px !important;
-    }
-    #our-products .tab-menu .tab-menu-heading{
-        width: 100% !important;
-        font-size: 12px;
-    }
+ #blog .row {
+     padding: 50px 0;
+ }
+
+ #blog .blog-box {
+     border-radius: 4px;
+     margin-bottom: 30px;
+ }
+
+ #blog .blog-box .desc {
+     padding: 20px;
+     position: relative;
+     background: white;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     border-radius: 4px;
+     margin-block-start: -50px;
+     margin-inline-start: 30px;
+ }
+
+ #blog .blog-box .img img {
+     border-radius: 4px;
+ }
+
+ #blog .show-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-size: var(--fs-5);
+    font-weight: 600;
+    transition: var(--transition-1);
+ }
+ #blog .show-more-btn:hover{
+    color: var(--orange);
+ }
+
+ #blog .blog-box .desc .top {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     font-size: 1.2rem;
+     font-family: var(--rubik);
+     color: var(--black);
+ }
+
+ #blog .blog-box .desc .top .cat-name {
+     color: var(--span-color);
+     text-transform: capitalize;
+ }
+
+ #blog .blog-box .desc .blog-name {
+     font-weight: bold;
+     font-size: 1.5rem;
+     color: var(--main-color);
+     letter-spacing: -0.5px;
+     text-transform: capitalize;
+     transition: var(--transition-1);
+ }
+
+ #blog .blog-box .desc .blog-name:hover {
+     color: var(--orange);
+ }
+
+ #blog .blog-box .desc .author-name {
+     color: var(--black);
+     font-weight: 600;
+ }
+
+ @media (max-width:576px) {
+     #intro .slider-area .slider {
+         height: 80vh !important;
+     }
+
+     #intro .slider-area .slider .content {
+         margin: 55% auto !important;
+     }
+
+     #intro .slider-area .slider .content p {
+         width: 100% !important;
+         font-size: var(--fs-1);
+     }
+
+     #intro .slider-area .slider .content a {
+         width: 50% !important;
+         font-size: var(--fs-1);
+     }
+
+     .headline .title {
+         font-size: var(--fs-6) !important;
+     }
+
+     .headline .title::before {
+         left: 0 !important;
+         width: 17%;
+     }
+
+     .headline .title::after {
+         right: 0 !important;
+         width: 17%;
+     }
+
+     #our-products .slick-prev,
+     .slick-next {
+         display: none !important;
+     }
+
+     #our-products .tab-menu {
+         margin-top: 40px !important;
+     }
+
+     #our-products .tab-menu .tab-menu-heading {
+         width: 100% !important;
+         font-size: 12px;
+     }
  }
