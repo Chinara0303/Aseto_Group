@@ -18,6 +18,7 @@ p {
   --fs-6: 2.25rem;
   --fs-7: 1.3rem;
   --fs-8: 4rem;
+  --fs-9: 1.5rem;
   --fs-10: 10rem;
   --fs-12: 12rem;
   --fs-18: 18rem;
@@ -31,6 +32,7 @@ p {
   --dark: hsl(0, 0%, 0%, 0.8);
   --orange: #FDB813;
   --span-color: #a5a5a5a8;
+  --bg-color: #a8a8a829;
 
   /* font-family */
   --oswald: "Oswal", sans-serif;
@@ -42,4 +44,14 @@ p {
 
   /* padding */
   --section-padding: 4rem;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: none;
 }

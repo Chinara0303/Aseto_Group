@@ -1,37 +1,5 @@
 
  
-#scroll-to-top {
-    background-color: var(--main-color);
-    right: 30px;
-    bottom: 30px;
-    width: 32px;
-    height: 32px;
-    padding: 15px;
-    border-radius: 30px;
-    position: fixed;
-    text-align: center;
-    text-decoration: none;
-    z-index: 2;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-  }
-  
-  #scroll-to-top i {
-    color: var(--white);
-    font-size: 18px;
-  }
-  
-  .hover-up {
-    transition: var(--transition-1);
-  }
-  
-  .hover-up:hover {
-    transform: translateY(-5px);
-  }
   
   
 header {
@@ -49,7 +17,7 @@ header {
     width: 100px;
 }
 
-.row {
+.header-area{
     align-items: center;
 }
 
@@ -163,7 +131,7 @@ a:hover {
     visibility: visible;
 }
 
-.right-area {
+header .right-area {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -210,7 +178,7 @@ a:hover {
     height: 100vh;
     background-color: var(--dark);
     opacity: .8;
-    transform: translateY(-1000px);
+    transform: translateY(-10000px);
     transition: var(--transition-1);
     z-index: 2;
 }
@@ -291,7 +259,7 @@ a:hover {
     top: 0;
     left: 0;
     height: 100vh;
-    transform: translateX(-300px);
+    transform: translateX(-500px);
     transition: var(--transition-1);
     width: 75%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -510,5 +478,10 @@ footer .copyright p {
 
     footer .text-title::after {
         left: 0 !important;
+    }
+}
+@media (min-width:820px) and (max-width:1180px) {
+    header .navbar-area ul li{
+        margin-right: 30px;
     }
 }

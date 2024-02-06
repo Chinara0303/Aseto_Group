@@ -1,26 +1,3 @@
-#intro{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    font-family: var(--oswald);
-    padding-block: var(--section-padding);
-    background-color: var(--main-color);
-}
-#intro .breadcrumb-area{
-    color: var(--main-color);
-    margin: 4% 0;
-    text-transform: capitalize;
-    color: var(--white);
-}
-#intro .breadcrumb-area p:nth-child(1){
-    font-size: var(--fs-2);
-}
-
-#intro .breadcrumb-area p:nth-child(2){
-    font-size: var(--fs-5);
-}
-
 
 #blogs {
     padding-block: var(--section-padding);
@@ -79,26 +56,7 @@
     color: var(--black);
     font-weight: 600;
 }
-.pagination{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.page-item .page-link{
-    border-radius: 50% !important;
-    color: var(--white);
-    background-color: var(--main-color);
-    font-size: 18px;
-    transition: var(--transition-1);
-}
-.page-item .page-link:hover{
-    background-color: var(--orange);
-    color: var(--main-color);
-}
 
-.page-link:focus{
-    box-shadow: none !important;
-}
 /* .headline .title {
     font-size: var(--fs-6) !important;
 }
