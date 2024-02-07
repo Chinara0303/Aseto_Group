@@ -18,7 +18,7 @@ header {
 }
 
 .header-area{
-    align-items: center;
+    align-items: center !important; 
 }
 
 .navbar-area ul {
@@ -57,7 +57,7 @@ header nav ul li i {
 }
 
 ul li:hover a {
-    color: var(--white);
+    color: var(--orange);
     opacity: 1;
 }
 
@@ -267,7 +267,7 @@ header .right-area {
 
 
 .menu-side .close-icon {
-    right: 0;
+    margin-left: 92px;
 }
 
 .menu-side .navigation {
@@ -347,7 +347,7 @@ footer .text-title::after {
     height: 1px;
     background-color: var(--orange);
     top: 120%;
-    left: 31%;
+    left: 44%;
 }
 
 footer .quick-links {
@@ -464,10 +464,6 @@ footer .copyright p {
 }
 
 @media (max-width:576px) {
-    header .row {
-        flex-wrap: nowrap !important;
-    }
-
     footer .text-title {
         text-align: left !important;
     }
@@ -480,8 +476,21 @@ footer .copyright p {
         left: 0 !important;
     }
 }
-@media (min-width:820px) and (max-width:1180px) {
+
+@media (min-width:768px) and (max-width:1180px) {
     header .navbar-area ul li{
         margin-right: 30px;
     }
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+  header .navbar-area ul li{
+    margin-right: 8px;
+  }
+  .navbar-area ul{
+    margin-left: 47px;
+    justify-content: space-around;
+
+  }
 }

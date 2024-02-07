@@ -23,6 +23,7 @@
 #blogs .blog-box .img img {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    width: 100%;
 }
 
 #blogs .blog-box .desc .top {
@@ -57,19 +58,6 @@
     font-weight: 600;
 }
 
-/* .headline .title {
-    font-size: var(--fs-6) !important;
-}
-
-.headline .title::before {
-    left: 0 !important;
-    width: 17%;
-}
-
-.headline .title::after {
-    right: 0 !important;
-    width: 17%;
-} */
 .headline {
     font-family: var(--oswald);
     font-weight: 600;

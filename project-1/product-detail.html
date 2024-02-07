@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +14,8 @@
     <!-- added font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- added boostrap -->
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- added slick slider -->
     <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick-theme.css" />
@@ -26,20 +28,22 @@
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/product-detail.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
     <title>Document</title>
 </head>
 </head>
+
 <body>
     <div class="overlay"></div>
     <header>
         <div class="container-fluid">
             <div class="row header-area">
-                <div class="col-lg-2 col-sm-2">
+                <div class="col-lg-2 col-md-1 col-6">
                     <div class="logo">
                         <img class="img-fluid" src="./assets/img/logo-pardis.png" alt="logo">
                     </div>
                 </div>
-                <div class="col-lg-8 d-none d-lg-block">
+                <div class="col-lg-8 col-md-8 d-none d-md-block d-lg-block">
                     <nav class="navbar-area">
                         <ul>
                             <li><a href="index.html">Home</a></li>
@@ -114,15 +118,16 @@
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </nav>
+
                 </div>
-                <div class="col-lg-2 col-sm-10">
+                <div class="col-lg-2 col-6 col-md-3">
                     <div class="right-area ">
                         <div class="search-button">
                             <button type="button">
                                 <i class="fa-solid fa-magnifying-glass fa-lg"></i>
                             </button>
                         </div>
-                        <div class="languages d-lg-block d-none">
+                        <div class="languages d-lg-block d-md-block d-none">
                             <ul>
                                 <li>
                                     <img src="./assets/img/fr_fr.gif" alt="">
@@ -135,7 +140,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="burger-menu d-lg-none d-block">
+                        <div class="burger-menu d-lg-none d-block d-md-none">
                             <div class="line"></div>
                             <div class="line second-line"></div>
                             <div class="line"></div>
@@ -151,15 +156,15 @@
                     </div>
                 </div>
             </div>
-            <div class="menu-side d-lg-none d-block">
+            <div class="menu-side d-lg-none d-block d-md-none">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
+                    <div class="row header-area">
+                        <div class="col-6">
                             <div class="logo">
                                 <img class="img-fluid" src="./assets/img/logo-pardis.png" alt="logo">
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-6">
                             <img class="close-icon" src="./assets/img/x-icon.png" alt="">
                         </div>
                     </div>
@@ -264,23 +269,554 @@
                 </div>
             </div>
         </section>
+
+        <!-- zoom modal-->
+        <div class="fixed-zoom-modal d-none">
+            <div class="zoom-modal ">
+                <div class="close-icon">
+                    <img src="./assets/img/x-icon.png" alt="">
+                </div>
+                <div class="zoom-modal-area">
+                    <img class="img-fluid" src="" alt="">
+                </div>
+            </div>
+        </div>
         <section id="single-product">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6"></div>
-                    <div class="col-lg-6"></div>
+                    <div class="col-lg-5">
+                        <div class="left-area">
+                            <div class="img-area">
+                                <img class="img-fluid" src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                    alt="">
+                                <div class="zoom">
+                                    <i class="fa-solid fa-magnifying-glass-plus fa-xl"></i>
+                                </div>
+                            </div>
+                            <div class="img-slider-area">
+                                <img class="img-fluid" src="./assets/img/products/2011_Top_Tec_4200_5W_30_5l_2c63.png"
+                                    alt="">
+                                <img class="img-fluid" src="./assets/img/products/2020___l_Verlust_Stop_300ml_d8d1.png"
+                                    alt="">
+                                <img class="img-fluid" src="./assets/img/products/20246_Mehrzweckfett_400g_a196.png"
+                                    alt="">
+                                <img class="img-fluid" src="./assets/img/products/20246_Mehrzweckfett_400g_a196.png"
+                                    alt="">
+                                <img class="img-fluid" src="./assets/img/products/20246_Mehrzweckfett_400g_a196.png"
+                                    alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="description-area">
+                            <p class="product-name">Hydraulic oil HLP 46 </p>
+                            <div class="area">
+                                <div class="price-area">
+                                    <span class="native-price">30.00</span>
+                                    <span class="currency">$</span>
+                                </div>
+                                <!-- <div class="price-area">
+                                    <del class="native-price">20.00</del>
+                                    <span class="currency">$</span>
+                                    <span class="discount-value">50% off</span>
+                                    <div class="discount-price-area">
+                                        <span class="discount-price">10.00</span>
+                                        <span class="currency">$</span>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="area">
+                                <div class="product-info">
+                                    <p>
+                                        Modern fully synthetic, low-SAPS motor oil for superior performance and long
+                                        engine life. Designed for use in numerous Volkswagen and Audi vehicles and also
+                                        suitable for use in a variety of BMW and Mercedes-Benz diesel vehicles as well
+                                        as specific Porsche models, etc. Use with extended oil change intervals as per
+                                        manufacturer.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="area">
+                                <span class="title">SKU:</span>
+                                <div class="codes">
+                                    <span class="sku">123</span>
+                                    <span class="container-content">1l</span>
+                                </div>
+                            </div>
+                            <div class="area">
+                                <p class="title">Recommendations:</p>
+                                <div class="codes">
+                                    <span>Caterpillar TO-2</span>
+                                    ,
+                                </div>
+                                <div class="codes">
+                                    <span>Caterpillar TO-5</span>
+                                    ,
+                                </div>
+                                <div class="codes">
+                                    <span>Caterpillar TO-5</span>
+                                    ,
+                                </div>
+                                <div class="codes">
+                                    <span>Caterpillar TO-5</span>
+                                    ,
+                                </div>
+                                <div class="codes">
+                                    <span>Caterpillar TO-5</span>
+                                    ,
+                                </div>
+                                <div class="codes">
+                                    <span>Caterpillar TO-5</span>
+                                    ,
+                                </div>
+                                <div class="codes">
+                                    <span>Caterpillar TO-5</span>
+                                    ,
+                                </div>
+                                <div class="codes">
+                                    <span>Caterpillar TO-5</span>
+                                    ,
+                                </div>
+                            </div>
+                            <div class="area contents">
+                                <p class="title">Container Contents:</p>
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-3 content">
+                                        <p>1l</p>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 content">
+                                        <p>25l</p>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 content">
+                                        <p>60l</p>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 content">
+                                        <p>100l</p>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 content">
+                                        <p>100l</p>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 content">
+                                        <p>100l</p>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 content">
+                                        <p>100l</p>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 content">
+                                        <p>100l</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="area">
+                                <p class="title">Container Type:</p>
+                                <input class="container-type" type="text" disabled placeholder="Canister plastic">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="product-information">
+            <div class="container">
+                <div class="accordion-area">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Approvals & Specifications
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="body-title">Approvals</p>
+                                    <ul class="approvals">
+                                        <li>
+                                            <p>ACEA C3,</p>
+                                        </li>
+                                        <li>
+                                            <p>ACEA C3,</p>
+                                        </li>
+                                        <li>
+                                            <p>ACEA C3,</p>
+                                        </li>
+                                        <li>
+                                            <p>ACEA C3,</p>
+                                        </li>
+                                        <li>
+                                            <p>ACEA C3,</p>
+                                        </li>
+                                        <li>
+                                            <p>ACEA C3,</p>
+                                        </li>
+                                        <li>
+                                            <p>ACEA C3,</p>
+                                        </li>
+                                        <li>
+                                            <p>ACEA C3,</p>
+                                        </li>
+                                        <li>
+                                            <p>ACEA C3,</p>
+                                        </li>
+                                        <li>
+                                            <p>ACEA C3,</p>
+                                        </li>
+                                    </ul>
+                                    <p class="body-title">Specifications</p>
+                                    <ul class="approvals">
+                                        <li>
+                                            <p>BMW Longlife-01 FE (up to 2018)*,</p>
+                                        </li>
+                                        <li>
+                                            <p>Fiat 9.55535-S1, ,</p>
+                                        </li>
+                                        <li>
+                                            <p>ACEA C2,</p>
+                                        </li>
+                                        <li>
+                                            <p>BMW Longlife-01 FE (up to 2018)*,</p>
+                                        </li>
+                                        <li>
+                                            <p>BMW Longlife-01 FE (up to 2018)*,</p>
+                                        </li>
+                                        <li>
+                                            <p>BMW Longlife-01 FE (up to 2018)*,</p>
+                                        </li>
+                                        <li>
+                                            <p>BMW Longlife-01 FE (up to 2018)*,</p>
+                                        </li>
+                                        <li>
+                                            <p>BMW Longlife-01 FE (up to 2018)*,</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Description
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse show"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="desc">Modern fully synthetic, low-SAPS motor oil for superior performance
+                                        and long
+                                        engine life. Designed for use in numerous Volkswagen and Audi vehicles and also
+                                        suitable for use in a variety of BMW and Mercedes-Benz diesel vehicles as well
+                                        as specific Porsche models, etc. Use with extended oil change intervals as per
+                                        manufacturer.</p>
+                                    <p class="desc">For gasoline or diesel engines where a motor oil according to
+                                        current
+                                        specifications is required or recommended. Tested safe with catalytic converters
+                                        and turbochargers. Observe the manufacturers instructions!</p>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">SKU</th>
+                                                <th scope="col">Container Type</th>
+                                                <th scope="col">Container Content</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="#">3715</a></td>
+                                                <td>Canister plastic</td>
+                                                <td>1 l</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">8973</a></td>
+                                                <td>Canister plastic</td>
+                                                <td>4 l</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">3708</a></td>
+                                                <td>Canister plastic</td>
+                                                <td>5 l</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">3716</a></td>
+                                                <td>Container</td>
+                                                <td>1000 l</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">3709</a></td>
+                                                <td>Black plate barrel</td>
+                                                <td>60 l</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">3711</a></td>
+                                                <td>Canister plastic</td>
+                                                <td>20 l</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="related-products">
+            <div class="container">
+                <div class="headline">
+                    <h4 class="title">Related Products</h4>
+                    <p class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, obcaecati.
+                    </p>
+                </div>
+                <div class="fixed-modal d-none">
+                    <div class="product-modal ">
+                        <div class="modal-area d-flex">
+                            <img class="close-icon" src="./assets/img/x-icon.png" alt="">
+                            <div class="img">
+                                <img src="./assets/img/products/2011_Top_Tec_4200_5W_30_5l_2c63.png" alt="">
+                            </div>
+                            <div class="information">
+                                <h2>Hydraulik Oil HLP 46</h2>
+                                <div class="prices">
+                                    <div class="discount d-flex align-items-center">
+                                        <del class="text-muted">20.00</del>
+                                        <p>50% OFF</p>
+                                    </div>
+                                    <div class="native-price">
+                                        <span>10.00</span>
+                                        <span>$</span>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <p>Product details</p>
+                                    <p class="description">Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem Ipsum has been the
+                                        industrys standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to
+                                        make a type specimen book.</p>
+                                </div>
+                                <div class="box-info">
+                                    <span>Avialibility:</span>
+                                    <span>In Stock</span>
+                                </div>
+                                <div class="box-info">
+                                    <span>Container-type:</span>
+                                    <span class="container-type">Container</span>
+                                </div>
+                                <div class="box-info">
+                                    <span>SKU:</span>
+                                    <span class="sku">2345</span>
+                                    <span class="container-content">1L</span>
+                                </div>
+                                <div class="container-contents">
+                                    <p>Container contents</p>
+                                    <div class="buttons">
+                                        <button type="button">1L</button>
+                                        <button type="button">4L</button>
+                                        <button type="button">5L</button>
+                                        <button type="button">20L</button>
+                                        <button type="button">60L</button>
+                                        <button type="button">1000L</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="products-area content">
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Hydraulic oil HLP 46</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/products/2011_Top_Tec_4200_5W_30_5l_2c63.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Top Tec 4200 5W 30</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/products/2020___l_Verlust_Stop_300ml_d8d1.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Verlust Stop</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/products/20246_Mehrzweckfett_400g_a196.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Mehrzweckfett</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/products/22094_Keramikpaste_Pinseldose_250g_3e74.jpg" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Keramikpaste Pinseldose</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/products/25086_Marine_2T_Motor_Oil_250ml_7b7c.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Marine 2T Motor Oil</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/products/3640_Doppelkupplungsgetriebe__l_8100_1l_1d3c.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Doppelkupplungsgetriebe Oil 8100</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/products/5129_Motorsystemreiniger_Benzin_300ml_e1cb.jpg" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Motorsystemreiniger Benzin</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/products/6052_Bike_Ketten__l_Wet_Lube_100ml_21de.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Bike Ketten Oil Wet Lube</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">
+                            <img src="./assets/img/products/6053_Bike_Cleaner_1l_844a.png" alt="">
+                        </div>
+                        <div class="information">
+                            <span class="category-name">Engine oil</span>
+                            <p class="name">Bike Cleaner</p>
+                            <p class="price">
+                                <span>20.00</span>
+                                <span>$</span>
+                            </p>
+                            <div class="learn-more-area">
+                                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                                <p class="learn-more">Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
     </main>
+
     <a href="javascript:void(0)" id="scroll-to-top" class="hover-up">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
 
-    <footer>
+   <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12 col-md-4">
                     <div class="logo">
                         <img class="img-fluid" src="./assets/img/logo-pardis.png" alt="">
                     </div>
@@ -309,7 +845,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12 col-md-4">
                     <p class="text-title">QUICK LINKS</p>
                     <ul class="quick-links">
                         <li><a href="about.html">About</a></li>
@@ -319,7 +855,7 @@
                         <li><a href="terms.html">Terms</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12 col-md-4">
                     <p class="text-title">Join us</p>
                     <form action="#">
                         <input type="text" placeholder="Enter email">
@@ -340,18 +876,19 @@
                 <p>2024©</p>
             </div>
         </div>
-    </footer>
-</body>
+    </footer></body>
 <!-- added slick slider js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.js"></script>
-<!-- added swiper slider -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 <!-- added js -->
 <script src="./assets/js/layout.js"></script>
-<script src="./assets/js/main.js"></script>
+<script src="./assets/js/product-detail.js"></script>
 
 </html>

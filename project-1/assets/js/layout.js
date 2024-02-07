@@ -34,10 +34,10 @@ burgerMenu.addEventListener("click", function () {
 })
 
 overlay.addEventListener("click", function () {
-    menu.classList.toggle("active-menu");
+    menu.classList.remove("active-menu");
     overlay.style.display = "none";
     secondLine.classList.remove("active-line")
-
+    
 })
 
 for (let i = 0; i < openSubmenues.length; i++) {

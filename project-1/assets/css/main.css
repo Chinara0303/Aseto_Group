@@ -1,10 +1,10 @@
 
  /* section intro */
- #intro {
+ #introduction {
      overflow: hidden;
  }
 
- #intro .slider-area .slider {
+ #introduction .slider-area .slider {
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -12,18 +12,18 @@
      font-family: var(--oswald);
  }
 
- #intro .slider-area .slider .content {
+ #introduction .slider-area .slider .content {
      width: 85%;
-     margin: 12% auto;
+     margin: 30% auto;
  }
 
- #intro .slider-area .slider .content p {
+ #introduction .slider-area .slider .content p {
      font-size: var(--fs-2);
      color: var(--white);
      width: 60%;
  }
 
- #intro .slider-area .slider .content a {
+ #introduction .slider-area .slider .content a {
      border: 1px solid var(--white);
      padding: 10px;
      display: block;
@@ -36,12 +36,12 @@
      text-align: center;
  }
 
- #intro .slider-area .slider .content a:hover {
+ #introduction .slider-area .slider .content a:hover {
      background-color: var(--orange);
      border-color: var(--orange);
  }
 
- #intro .slick-dots {
+ #introduction .slick-dots {
      bottom: 120px !important;
  }
 
@@ -55,39 +55,7 @@
  }
 
  /* section our roducts */
- .headline {
-     text-align: center;
-     font-family: var(--oswald);
-     font-weight: 600;
-     font-size: var(--fs-1);
- }
-
- .headline .title {
-     color: var(--orange);
-     font-size: var(--fs-3);
-     font-weight: 600;
-     position: relative;
- }
-
- .headline .title::before {
-     content: '';
-     position: absolute;
-     top: 1px;
-     left: 27%;
-     background-color: var(--orange);
-     width: 7%;
-     height: 2px;
- }
-
- .headline .title::after {
-     content: '';
-     position: absolute;
-     top: 88%;
-     right: 27%;
-     background-color: var(--orange);
-     width: 7%;
-     height: 2px;
- }
+ 
 
  #our-products {
      padding-block: var(--section-padding);
@@ -258,7 +226,7 @@
      align-items: center;
  }
 
- .close-icon {
+ .product-modal .close-icon {
      position: absolute;
      top: -25px;
      right: -22px;
@@ -270,7 +238,10 @@
      width: 50px;
      cursor: pointer;
  }
-
+ .fixed-modal .container-contents button{
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
 
  .product-modal .information {
      padding: 18px;
@@ -583,37 +554,25 @@
  }
 
  @media (max-width:576px) {
-     #intro .slider-area .slider {
-         height: 80vh !important;
+     #introduction .slider-area .slider {
+         height: 70vh !important;
      }
 
-     #intro .slider-area .slider .content {
+     #introduction .slider-area .slider .content {
          margin: 55% auto !important;
      }
 
-     #intro .slider-area .slider .content p {
+     #introduction .slider-area .slider .content p {
          width: 100% !important;
          font-size: var(--fs-1);
      }
 
-     #intro .slider-area .slider .content a {
+     #introduction .slider-area .slider .content a {
          width: 50% !important;
          font-size: var(--fs-1);
      }
 
-     .headline .title {
-         font-size: var(--fs-6) !important;
-     }
-
-     .headline .title::before {
-         left: 0 !important;
-         width: 17%;
-     }
-
-     .headline .title::after {
-         right: 0 !important;
-         width: 17%;
-     }
+    
 
      #our-products .slick-prev,
      .slick-next {
@@ -628,4 +587,29 @@
          width: 100% !important;
          font-size: 12px;
      }
+ }
+
+ @media (min-width:768px) and (max-width:1180px) {
+    #introduction .slider-area .slider .content p{
+        font-size: var(--fs-9) !important;
+    }
+    #introduction .slider-area .slider {
+        height: 60vh;
+    }
+    #introduction .slider-area .slider .content a{
+        width: 30% !important;
+    }
+    #introduction .slick-dots {
+        bottom: 50px !important;
+    }
+    #our-products .tab-menu .tab-menu-heading {
+        width: 100%;
+    }
+
+    .product-modal{
+        width: 92%;
+        left: 4%;
+        top: 7%;
+    }
+    
  }

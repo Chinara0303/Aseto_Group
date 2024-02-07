@@ -1,3 +1,320 @@
-#single-product{
+#single-product {
     padding-block: var(--section-padding);
+    font-family: var(--rubik);
+}
+
+#single-product .img-area {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#single-product .img-area .zoom {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+#single-product .img-slider-area {
+    margin: 40px 0;
+}
+
+#single-product .area .container-type {
+    margin-left: 10px;
+    height: 36px;
+    padding: 5px 10px;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    transition: var(--transition-1);
+}
+
+#single-product .area .container-type:hover {
+    border-color: var(--orange);
+}
+
+#single-product .title,
+.body-title {
+    position: relative;
+}
+
+#single-product .title::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 25%;
+    width: 50%;
+    height: 1px;
+    background-color: var(--orange);
+}
+
+.body-title::after {
+    content: "";
+    position: absolute;
+    top: 43px;
+    left: 0%;
+    width: 10%;
+    height: 1px;
+    background-color: var(--orange);
+}
+
+
+#single-product .img-slider-area img {
+    cursor: pointer;
+}
+
+.fixed-zoom-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.zoom-modal {
+    width: 34%;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    background: white;
+    border-radius: 4px;
+}
+
+.zoom-modal img {
+    width: 65%;
+}
+
+.zoom-modal .zoom-modal-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.zoom-modal .close-icon {
+    position: absolute;
+    top: -12px;
+    right: -31px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+#product-information {
+    padding-block: var(--section-padding);
+    font-family: var(--rubik);
+}
+
+.accordion-area {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.accordion-area .accordion .accordion-item {
+    margin-top: 10px;
+    border: none;
+}
+
+.accordion-area .accordion .accordion-item button {
+    background-color: var(--bg-color);
+    transition: var(--transition-1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    color: var(--main-color);
+    border-radius: 4px;
+    font-size: var(--fs-7);
+}
+
+.accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-area .accordion .accordion-item .accordion-header {
+    position: relative;
+}
+
+.accordion-area .accordion .accordion-item .accordion-header i {
+    color: var(--main-color);
+}
+
+.approvals {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.accordion-area .accordion .accordion-item .accordion-body {
+    margin-top: 30px;
+}
+
+.accordion-area .accordion .accordion-item .accordion-body .body-title {
+    font-size: var(--fs-7);
+    color: var(--dark);
+    font-weight: 500;
+}
+
+.accordion-area .accordion .accordion-item .accordion-body .desc {
+    font-size: var(--fs-1);
+    margin-top: 10px;
+}
+
+table {
+    margin-top: 30px;
+    width: 40% !important;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+#single-product .slick-slide div {
+    border: 1px solid var(--border-color);
+    margin-right: 20px;
+    transition: var(--transition-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#single-product .slick-slide div:hover {
+    border-color: var(--orange);
+}
+
+#related-products {
+    padding-block: var(--section-padding);
+    font-family: var(--rubik);
+}
+
+.products-area {
+    margin: 30px 0;
+}
+
+.products-area .product {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 94% !important;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.products-area .product .information {
+    margin-top: 20px;
+    height: var(--fs-10);
+}
+
+.products-area .product .information .name {
+    text-transform: capitalize;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.69);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.products-area .product .information .price {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.products-area .product .information .price :last-child {
+    margin-left: -4px !important;
+}
+
+.products-area .product .information .category-name {
+    text-transform: capitalize;
+    color: var(--span-color);
+}
+
+.products-area .product .information .learn-more-area {
+    cursor: pointer;
+}
+
+.products-area .product .information .learn-more {
+    color: var(--main-color);
+    font-size: var(--fs-1);
+    font-weight: 600;
+    transition: var(--transition-1);
+    margin-left: -16px;
+    display: inline-block;
+}
+
+.products-area .product .information .learn-more-area i {
+    transform: translateX(-16px);
+    transition: var(--transition-1);
+    color: var(--white);
+}
+
+.products-area .product .information .learn-more-area:hover .learn-more {
+    color: var(--orange);
+    margin-left: 0;
+}
+
+.products-area .product .information .learn-more-area:hover i {
+    transform: translateX(0);
+    color: var(--orange);
+}
+
+@media (max-width:576px) {
+    #single-product .slick-slide div img{
+        width: 50%;
+    }
+
+    .zoom-modal {
+        width: 85%;
+        left: 6%;
+    }
+    .area.contents{
+        width: 100% !important;
+    }
+
+    .accordion-area .accordion .accordion-item button {
+        width: 100%;
+        font-size: var(--fs-1)
+    }
+    table{
+        width: 100% !important;
+    }
+    
+}
+@media (min-width:768px) and (max-width:1180px){
+    .zoom-modal {
+        width: 85% !important;
+        left: 6%;
+        top: 10%;
+    }
+    .zoom-modal img{
+        width: 40%;
+    }
+    .zoom-modal .close-icon {
+        top: -12px;
+        right: -71px;
+        width: 101px;
+        height: 100px;
+    }
+    .area.contents{
+        width: 100% !important;
+    }
+
+    .accordion-area .accordion .accordion-item button {
+        width: 100%;
+        font-size: var(--fs-1)
+    }
+    table{
+        width: 100% !important;
+    }
+    
 }
