@@ -39,10 +39,12 @@ $('.img-slider-area').slick({
 
 $('.products-area').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
+    autoplay:true,
+    autoplaySpeed: 2000,
     responsive: [
         {
             breakpoint: 1024,
@@ -51,6 +53,8 @@ $('.products-area').slick({
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true,
+                autoplay:true,
+                autoplaySpeed: 2000,
             }
         },
         {
@@ -58,6 +62,8 @@ $('.products-area').slick({
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
+                autoplay:true,
+                autoplaySpeed: 2000,
             }
         },
         {
@@ -65,6 +71,8 @@ $('.products-area').slick({
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                autoplay:true,
+                autoplaySpeed: 2000,
             }
         }
         // You can unslick at a given breakpoint now by adding:

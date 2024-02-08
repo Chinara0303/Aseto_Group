@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,21 +14,20 @@
     <!-- added font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- added boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- added slick slider -->
     <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick-theme.css" />
-
-    <!-- added swiper slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <!-- added css -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/area-of-use.css">
     <title>Document</title>
 </head>
 </head>
+
 <body>
     <div class="overlay"></div>
     <header>
@@ -249,10 +249,674 @@
         </div>
     </header>
 
+    <main>
+        <section id="intro">
+            <div class="border"></div>
+            <div class="container">
+                <img class="img-fluid" src="./assets/img/areas-of-use/classic cars large.webp" alt="">
+
+                <div class="breadcrumb-area">
+                    <p>
+                        <span>Home</span>
+                        <span>/</span>
+                        <span class="section-name">Areas of Use</span>
+                        <span>/</span>
+                        <span class="section-name">Classic Cars</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="filter-area">
+            <div class="container">
+                <div class="selection-area">
+                    <div class="header">
+                        <h2>Wehicle Selection</h2>
+                    </div>
+                    <div class="bottom">
+                        <span>Select your wehicle:</span>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <select class="form-select" id="select1" aria-label="Default select example">
+                                    <option value="" hidden="hidden">Brand</option>
+                                    <option value="79614979e717e366">AC</option>
+                                    <option value="4ef71e762597cb1a">Alfa Romeo (EU)</option>
+                                    <option value="add8a0d24392e556">Alpine</option>
+                                    <option value="ac2997b6ab144dda">AMC</option>
+                                    <option value="67e0508049a3b9a2">Aston Martin</option>
+                                    <option value="7dd288dc3e21c71c">Audi (EU)</option>
+                                    <option value="3f418421b38385d3">Austin</option>
+                                    <option value="d3f40302748e6d88">Austin-Healey</option>
+                                    <option value="3fbe9f689ae5b7b7">Autobianchi</option>
+                                    <option value="d80d33c93998ce41">Bentley</option>
+                                    <option value="a3423f128cc1f483">BMC</option>
+                                    <option value="3fc866cd007981f0">BMW (EU)</option>
+                                    <option value="27b10940c064c164">BMW (USA)</option>
+                                    <option value="dcb78efbc9945ce2">Bond</option>
+                                    <option value="bfe13eaefa97effb">Borgward</option>
+                                    <option value="ba38ebb6f43e3ec5">Buick (USA / CAN)</option>
+                                    <option value="96ec8cb3862b127f">Cadillac (USA / CAN)</option>
+                                    <option value="5482e0f88acbee0c">Chevrolet (USA)</option>
+                                    <option value="0930db0c95ee7fdb">Chrysler (USA / CAN)</option>
+                                    <option value="d72694a5596a64ca">Citroën</option>
+                                    <option value="87224ac205a2278d">Commer</option>
+                                    <option value="2e0889af6f499103">DAF</option>
+                                    <option value="974b1c4502f9a562">Daihatsu</option>
+                                    <option value="24f108b1ad4ebabc">Daimler</option>
+                                    <option value="a217384f706d6e13">Datsun (Nissan)</option>
+                                    <option value="41a61ea6b9ceefc8">De Tomaso</option>
+                                    <option value="f4742da3e12bae79">Delorean</option>
+                                    <option value="7ca2e3bfdd8b8551">DKW - Auto Union</option>
+                                    <option value="2d44a4c2feb5825f">Dodge (USA / CAN)</option>
+                                    <option value="4dee823ed8e2a509">Facel Vega</option>
+                                    <option value="7df0f39fc1e08913">Ferrari</option>
+                                    <option value="34d72aed844ab327">Fiat (EU)</option>
+                                    <option value="26548c88a58dd2c3">Ford (USA)</option>
+                                    <option value="7785f91c795d2f48">Ford Europe</option>
+                                    <option value="d338f0b7dadbd72f">Glas</option>
+                                    <option value="4a76831f0c41fbb7">Hillman</option>
+                                    <option value="8ecd0787a56faa41">Holden</option>
+                                    <option value="a6dd321b6cdff8f5">Honda</option>
+                                    <option value="1ee74049bcc947b0">Hudson</option>
+                                    <option value="448d7493fe2af188">Humber</option>
+                                    <option value="3728347b7380b159">Hupmobile</option>
+                                    <option value="4d5debd8cc41b453">Hyundai</option>
+                                    <option value="38a44cf50ad64351">Innocenti</option>
+                                    <option value="7b478266f98c30e7">Iso</option>
+                                    <option value="f9d9f1c805e490c3">Isuzu</option>
+                                    <option value="190f033dee6c51a3">Jaguar (EU)</option>
+                                    <option value="0f77262dbc45385b">Jeep</option>
+                                    <option value="0ddb4e06c05560f5">Jensen</option>
+                                    <option value="9e21602616b44949">Kaiser-Frazer</option>
+                                    <option value="61b85d90095f36ae">Lada (VAZ / Zhiguli)</option>
+                                    <option value="d0123f7027d83326">Lamborghini</option>
+                                    <option value="e41a081ca0871770">Lancia</option>
+                                    <option value="81a55382e47a1536">Land Rover (EU)</option>
+                                    <option value="21e6c48f00718748">Lonsdale</option>
+                                    <option value="a273f101a6e0f3bd">Lotus</option>
+                                    <option value="eed5c3e578d43f4a">Maserati</option>
+                                    <option value="1a560d51d6bc2e25">Mazda (EU)</option>
+                                    <option value="4f7cbf077e246cbe">Mercedes-Benz (EU)</option>
+                                    <option value="85ec7da16af91a51">MG</option>
+                                    <option value="7aef77627edc0874">Mitsubishi (EU)</option>
+                                    <option value="dfb227879a277399">Morris</option>
+                                    <option value="edf0f83fb4dbbe51">NSU</option>
+                                    <option value="676137f945e01cb1">Oldsmobile (USA / CAN)</option>
+                                    <option value="9573fe6dfc2bdcca">Opel</option>
+                                    <option value="f215f32059b82059">Panhard</option>
+                                    <option value="3c0259ebb3eb7196">Peugeot</option>
+                                    <option value="4b9fd8f98a79fe31">Pontiac</option>
+                                    <option value="8e477f338cec8d91">Porsche (EU)</option>
+                                    <option value="f3b31e3eca64d06a">Ranger (GM)</option>
+                                    <option value="9e9e76122afb7deb">Reliant</option>
+                                    <option value="bf27e714120f5819">Renault</option>
+                                    <option value="b8be49417e7c89b6">Riley</option>
+                                    <option value="371c38dd53385a29">Rolls-Royce</option>
+                                    <option value="0ba1d64b06b7c2b2">Rover</option>
+                                    <option value="5ca19cc148f8af21">Saab</option>
+                                    <option value="4e199b8328791507">Santana</option>
+                                    <option value="f2fdbcfa8e83d05e">Simca</option>
+                                    <option value="21712832c0a7692a">Singer</option>
+                                    <option value="c9c6dfede126cc5a">Skoda</option>
+                                    <option value="bdac4af36afa254d">Standard</option>
+                                    <option value="0c2226c1599bc079">Subaru (EU)</option>
+                                    <option value="a629a23d0238e0de">Sunbeam</option>
+                                    <option value="d6469555c98196f8">Suzuki</option>
+                                    <option value="274487d5a18fbdd8">Talbot</option>
+                                    <option value="4d202ed963e80982">Tatra</option>
+                                    <option value="8bcd3b7c13e327bb">Toyota</option>
+                                    <option value="23d78b6fce959e45">Triumph</option>
+                                    <option value="11320ec6fdf5c850">TVR</option>
+                                    <option value="501dd32922cb2bce">Vauxhall</option>
+                                    <option value="e6957dd2a8db9671">Volkswagen (VW) (EU)</option>
+                                    <option value="07a7d807dc057875">Volvo (EU)</option>
+                                    <option value="e0788b7fb69eed2e">Wartburg</option>
+                                    <option value="49703a2e0ea22c23">Wolseley</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4">
+                                <select class="form-select" id="select2" disabled aria-label="Default select example">
+                                    <option value="" hidden="hidden">Model</option>
+                                    <option value="79614979e717e366">AC</option>
+                                    <option value="4ef71e762597cb1a">Alfa Romeo (EU)</option>
+                                    <option value="add8a0d24392e556">Alpine</option>
+                                    <option value="ac2997b6ab144dda">AMC</option>
+                                    <option value="67e0508049a3b9a2">Aston Martin</option>
+                                    <option value="7dd288dc3e21c71c">Audi (EU)</option>
+                                    <option value="3f418421b38385d3">Austin</option>
+                                    <option value="d3f40302748e6d88">Austin-Healey</option>
+                                    <option value="3fbe9f689ae5b7b7">Autobianchi</option>
+                                    <option value="d80d33c93998ce41">Bentley</option>
+                                    <option value="a3423f128cc1f483">BMC</option>
+                                    <option value="3fc866cd007981f0">BMW (EU)</option>
+                                    <option value="27b10940c064c164">BMW (USA)</option>
+                                    <option value="dcb78efbc9945ce2">Bond</option>
+                                    <option value="bfe13eaefa97effb">Borgward</option>
+                                    <option value="ba38ebb6f43e3ec5">Buick (USA / CAN)</option>
+                                    <option value="96ec8cb3862b127f">Cadillac (USA / CAN)</option>
+                                    <option value="5482e0f88acbee0c">Chevrolet (USA)</option>
+                                    <option value="0930db0c95ee7fdb">Chrysler (USA / CAN)</option>
+                                    <option value="d72694a5596a64ca">Citroën</option>
+                                    <option value="87224ac205a2278d">Commer</option>
+                                    <option value="2e0889af6f499103">DAF</option>
+                                    <option value="974b1c4502f9a562">Daihatsu</option>
+                                    <option value="24f108b1ad4ebabc">Daimler</option>
+                                    <option value="a217384f706d6e13">Datsun (Nissan)</option>
+                                    <option value="41a61ea6b9ceefc8">De Tomaso</option>
+                                    <option value="f4742da3e12bae79">Delorean</option>
+                                    <option value="7ca2e3bfdd8b8551">DKW - Auto Union</option>
+                                    <option value="2d44a4c2feb5825f">Dodge (USA / CAN)</option>
+                                    <option value="4dee823ed8e2a509">Facel Vega</option>
+                                    <option value="7df0f39fc1e08913">Ferrari</option>
+                                    <option value="34d72aed844ab327">Fiat (EU)</option>
+                                    <option value="26548c88a58dd2c3">Ford (USA)</option>
+                                    <option value="7785f91c795d2f48">Ford Europe</option>
+                                    <option value="d338f0b7dadbd72f">Glas</option>
+                                    <option value="4a76831f0c41fbb7">Hillman</option>
+                                    <option value="8ecd0787a56faa41">Holden</option>
+                                    <option value="a6dd321b6cdff8f5">Honda</option>
+                                    <option value="1ee74049bcc947b0">Hudson</option>
+                                    <option value="448d7493fe2af188">Humber</option>
+                                    <option value="3728347b7380b159">Hupmobile</option>
+                                    <option value="4d5debd8cc41b453">Hyundai</option>
+                                    <option value="38a44cf50ad64351">Innocenti</option>
+                                    <option value="7b478266f98c30e7">Iso</option>
+                                    <option value="f9d9f1c805e490c3">Isuzu</option>
+                                    <option value="190f033dee6c51a3">Jaguar (EU)</option>
+                                    <option value="0f77262dbc45385b">Jeep</option>
+                                    <option value="0ddb4e06c05560f5">Jensen</option>
+                                    <option value="9e21602616b44949">Kaiser-Frazer</option>
+                                    <option value="61b85d90095f36ae">Lada (VAZ / Zhiguli)</option>
+                                    <option value="d0123f7027d83326">Lamborghini</option>
+                                    <option value="e41a081ca0871770">Lancia</option>
+                                    <option value="81a55382e47a1536">Land Rover (EU)</option>
+                                    <option value="21e6c48f00718748">Lonsdale</option>
+                                    <option value="a273f101a6e0f3bd">Lotus</option>
+                                    <option value="eed5c3e578d43f4a">Maserati</option>
+                                    <option value="1a560d51d6bc2e25">Mazda (EU)</option>
+                                    <option value="4f7cbf077e246cbe">Mercedes-Benz (EU)</option>
+                                    <option value="85ec7da16af91a51">MG</option>
+                                    <option value="7aef77627edc0874">Mitsubishi (EU)</option>
+                                    <option value="dfb227879a277399">Morris</option>
+                                    <option value="edf0f83fb4dbbe51">NSU</option>
+                                    <option value="676137f945e01cb1">Oldsmobile (USA / CAN)</option>
+                                    <option value="9573fe6dfc2bdcca">Opel</option>
+                                    <option value="f215f32059b82059">Panhard</option>
+                                    <option value="3c0259ebb3eb7196">Peugeot</option>
+                                    <option value="4b9fd8f98a79fe31">Pontiac</option>
+                                    <option value="8e477f338cec8d91">Porsche (EU)</option>
+                                    <option value="f3b31e3eca64d06a">Ranger (GM)</option>
+                                    <option value="9e9e76122afb7deb">Reliant</option>
+                                    <option value="bf27e714120f5819">Renault</option>
+                                    <option value="b8be49417e7c89b6">Riley</option>
+                                    <option value="371c38dd53385a29">Rolls-Royce</option>
+                                    <option value="0ba1d64b06b7c2b2">Rover</option>
+                                    <option value="5ca19cc148f8af21">Saab</option>
+                                    <option value="4e199b8328791507">Santana</option>
+                                    <option value="f2fdbcfa8e83d05e">Simca</option>
+                                    <option value="21712832c0a7692a">Singer</option>
+                                    <option value="c9c6dfede126cc5a">Skoda</option>
+                                    <option value="bdac4af36afa254d">Standard</option>
+                                    <option value="0c2226c1599bc079">Subaru (EU)</option>
+                                    <option value="a629a23d0238e0de">Sunbeam</option>
+                                    <option value="d6469555c98196f8">Suzuki</option>
+                                    <option value="274487d5a18fbdd8">Talbot</option>
+                                    <option value="4d202ed963e80982">Tatra</option>
+                                    <option value="8bcd3b7c13e327bb">Toyota</option>
+                                    <option value="23d78b6fce959e45">Triumph</option>
+                                    <option value="11320ec6fdf5c850">TVR</option>
+                                    <option value="501dd32922cb2bce">Vauxhall</option>
+                                    <option value="e6957dd2a8db9671">Volkswagen (VW) (EU)</option>
+                                    <option value="07a7d807dc057875">Volvo (EU)</option>
+                                    <option value="e0788b7fb69eed2e">Wartburg</option>
+                                    <option value="49703a2e0ea22c23">Wolseley</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4">
+                                <select class="form-select" id="select3" disabled aria-label="Default select example">
+                                    <option value="" hidden="hidden">Wehicle Type</option>
+                                    <option value="79614979e717e366">AC</option>
+                                    <option value="4ef71e762597cb1a">Alfa Romeo (EU)</option>
+                                    <option value="add8a0d24392e556">Alpine</option>
+                                    <option value="ac2997b6ab144dda">AMC</option>
+                                    <option value="67e0508049a3b9a2">Aston Martin</option>
+                                    <option value="7dd288dc3e21c71c">Audi (EU)</option>
+                                    <option value="3f418421b38385d3">Austin</option>
+                                    <option value="d3f40302748e6d88">Austin-Healey</option>
+                                    <option value="3fbe9f689ae5b7b7">Autobianchi</option>
+                                    <option value="d80d33c93998ce41">Bentley</option>
+                                    <option value="a3423f128cc1f483">BMC</option>
+                                    <option value="3fc866cd007981f0">BMW (EU)</option>
+                                    <option value="27b10940c064c164">BMW (USA)</option>
+                                    <option value="dcb78efbc9945ce2">Bond</option>
+                                    <option value="bfe13eaefa97effb">Borgward</option>
+                                    <option value="ba38ebb6f43e3ec5">Buick (USA / CAN)</option>
+                                    <option value="96ec8cb3862b127f">Cadillac (USA / CAN)</option>
+                                    <option value="5482e0f88acbee0c">Chevrolet (USA)</option>
+                                    <option value="0930db0c95ee7fdb">Chrysler (USA / CAN)</option>
+                                    <option value="d72694a5596a64ca">Citroën</option>
+                                    <option value="87224ac205a2278d">Commer</option>
+                                    <option value="2e0889af6f499103">DAF</option>
+                                    <option value="974b1c4502f9a562">Daihatsu</option>
+                                    <option value="24f108b1ad4ebabc">Daimler</option>
+                                    <option value="a217384f706d6e13">Datsun (Nissan)</option>
+                                    <option value="41a61ea6b9ceefc8">De Tomaso</option>
+                                    <option value="f4742da3e12bae79">Delorean</option>
+                                    <option value="7ca2e3bfdd8b8551">DKW - Auto Union</option>
+                                    <option value="2d44a4c2feb5825f">Dodge (USA / CAN)</option>
+                                    <option value="4dee823ed8e2a509">Facel Vega</option>
+                                    <option value="7df0f39fc1e08913">Ferrari</option>
+                                    <option value="34d72aed844ab327">Fiat (EU)</option>
+                                    <option value="26548c88a58dd2c3">Ford (USA)</option>
+                                    <option value="7785f91c795d2f48">Ford Europe</option>
+                                    <option value="d338f0b7dadbd72f">Glas</option>
+                                    <option value="4a76831f0c41fbb7">Hillman</option>
+                                    <option value="8ecd0787a56faa41">Holden</option>
+                                    <option value="a6dd321b6cdff8f5">Honda</option>
+                                    <option value="1ee74049bcc947b0">Hudson</option>
+                                    <option value="448d7493fe2af188">Humber</option>
+                                    <option value="3728347b7380b159">Hupmobile</option>
+                                    <option value="4d5debd8cc41b453">Hyundai</option>
+                                    <option value="38a44cf50ad64351">Innocenti</option>
+                                    <option value="7b478266f98c30e7">Iso</option>
+                                    <option value="f9d9f1c805e490c3">Isuzu</option>
+                                    <option value="190f033dee6c51a3">Jaguar (EU)</option>
+                                    <option value="0f77262dbc45385b">Jeep</option>
+                                    <option value="0ddb4e06c05560f5">Jensen</option>
+                                    <option value="9e21602616b44949">Kaiser-Frazer</option>
+                                    <option value="61b85d90095f36ae">Lada (VAZ / Zhiguli)</option>
+                                    <option value="d0123f7027d83326">Lamborghini</option>
+                                    <option value="e41a081ca0871770">Lancia</option>
+                                    <option value="81a55382e47a1536">Land Rover (EU)</option>
+                                    <option value="21e6c48f00718748">Lonsdale</option>
+                                    <option value="a273f101a6e0f3bd">Lotus</option>
+                                    <option value="eed5c3e578d43f4a">Maserati</option>
+                                    <option value="1a560d51d6bc2e25">Mazda (EU)</option>
+                                    <option value="4f7cbf077e246cbe">Mercedes-Benz (EU)</option>
+                                    <option value="85ec7da16af91a51">MG</option>
+                                    <option value="7aef77627edc0874">Mitsubishi (EU)</option>
+                                    <option value="dfb227879a277399">Morris</option>
+                                    <option value="edf0f83fb4dbbe51">NSU</option>
+                                    <option value="676137f945e01cb1">Oldsmobile (USA / CAN)</option>
+                                    <option value="9573fe6dfc2bdcca">Opel</option>
+                                    <option value="f215f32059b82059">Panhard</option>
+                                    <option value="3c0259ebb3eb7196">Peugeot</option>
+                                    <option value="4b9fd8f98a79fe31">Pontiac</option>
+                                    <option value="8e477f338cec8d91">Porsche (EU)</option>
+                                    <option value="f3b31e3eca64d06a">Ranger (GM)</option>
+                                    <option value="9e9e76122afb7deb">Reliant</option>
+                                    <option value="bf27e714120f5819">Renault</option>
+                                    <option value="b8be49417e7c89b6">Riley</option>
+                                    <option value="371c38dd53385a29">Rolls-Royce</option>
+                                    <option value="0ba1d64b06b7c2b2">Rover</option>
+                                    <option value="5ca19cc148f8af21">Saab</option>
+                                    <option value="4e199b8328791507">Santana</option>
+                                    <option value="f2fdbcfa8e83d05e">Simca</option>
+                                    <option value="21712832c0a7692a">Singer</option>
+                                    <option value="c9c6dfede126cc5a">Skoda</option>
+                                    <option value="bdac4af36afa254d">Standard</option>
+                                    <option value="0c2226c1599bc079">Subaru (EU)</option>
+                                    <option value="a629a23d0238e0de">Sunbeam</option>
+                                    <option value="d6469555c98196f8">Suzuki</option>
+                                    <option value="274487d5a18fbdd8">Talbot</option>
+                                    <option value="4d202ed963e80982">Tatra</option>
+                                    <option value="8bcd3b7c13e327bb">Toyota</option>
+                                    <option value="23d78b6fce959e45">Triumph</option>
+                                    <option value="11320ec6fdf5c850">TVR</option>
+                                    <option value="501dd32922cb2bce">Vauxhall</option>
+                                    <option value="e6957dd2a8db9671">Volkswagen (VW) (EU)</option>
+                                    <option value="07a7d807dc057875">Volvo (EU)</option>
+                                    <option value="e0788b7fb69eed2e">Wartburg</option>
+                                    <option value="49703a2e0ea22c23">Wolseley</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filtered-products de-active-filtered-products">
+                            <div class="header">
+                                <h2>Recommendation</h2>
+                            </div>
+                            <div class="recommend-products">
+                                <div class="product">
+                                    <div class="img">
+                                        <a href="product-detail.html">
+                                             <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                            alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description-area">
+                                        <a href="product-detail.html" class="product-name">Hydraulic oil HLP 46 </a>
+                                        <div class="area">
+                                            <div class="price-area">
+                                                <span class="native-price">30.00</span>
+                                                <span class="currency">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="img">
+                                        <a href="product-detail.html">
+                                             <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                            alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description-area">
+                                        <a href="product-detail.html" class="product-name">Hydraulic oil HLP 46 </a>
+                                        <div class="area">
+                                            <div class="price-area">
+                                                <del class="native-price">20.00</del>
+                                                <span class="currency">$</span>
+                                                <span class="discount-value">50%</span>
+                                                    <span class="discount-price">10.00</span>
+                                                    <span class="currency">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="img">
+                                        <a href="product-detail.html">
+                                             <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                            alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description-area">
+                                        <a href="product-detail.html" class="product-name">Hydraulic oil HLP 46 </a>
+                                        <div class="area">
+                                            <div class="price-area">
+                                                <del class="native-price">20.00</del>
+                                                <span class="currency">$</span>
+                                                <span class="discount-value">50%</span>
+                                                    <span class="discount-price">10.00</span>
+                                                    <span class="currency">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="img">
+                                        <a href="product-detail.html">
+                                             <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                            alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description-area">
+                                        <a href="product-detail.html" class="product-name">Hydraulic oil HLP 46 </a>
+                                        <div class="area">
+                                            <div class="price-area">
+                                                <del class="native-price">20.00</del>
+                                                <span class="currency">$</span>
+                                                <span class="discount-value">50%</span>
+                                                    <span class="discount-price">10.00</span>
+                                                    <span class="currency">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="img">
+                                        <a href="product-detail.html">
+                                             <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                            alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description-area">
+                                        <a href="product-detail.html" class="product-name">Hydraulic oil HLP 46 </a>
+                                        <div class="area">
+                                            <div class="price-area">
+                                                <del class="native-price">20.00</del>
+                                                <span class="currency">$</span>
+                                                <span class="discount-value">50%</span>
+                                                    <span class="discount-price">10.00</span>
+                                                    <span class="currency">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="img">
+                                        <a href="product-detail.html">
+                                             <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                            alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description-area">
+                                        <a href="product-detail.html" class="product-name">Hydraulic oil HLP 46 </a>
+                                        <div class="area">
+                                            <div class="price-area">
+                                                <del class="native-price">20.00</del>
+                                                <span class="currency">$</span>
+                                                <span class="discount-value">50%</span>
+                                                    <span class="discount-price">10.00</span>
+                                                    <span class="currency">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="img">
+                                        <a href="product-detail.html">
+                                             <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                            alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description-area">
+                                        <a href="product-detail.html" class="product-name">Hydraulic oil HLP 46 </a>
+                                        <div class="area">
+                                            <div class="price-area">
+                                                <del class="native-price">20.00</del>
+                                                <span class="currency">$</span>
+                                                <span class="discount-value">50%</span>
+                                                    <span class="discount-price">10.00</span>
+                                                    <span class="currency">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="img">
+                                        <a href="product-detail.html">
+                                             <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                            alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description-area">
+                                        <a href="product-detail.html" class="product-name">Hydraulic oil HLP 46 </a>
+                                        <div class="area">
+                                            <div class="price-area">
+                                                <del class="native-price">20.00</del>
+                                                <span class="currency">$</span>
+                                                <span class="discount-value">50%</span>
+                                                    <span class="discount-price">10.00</span>
+                                                    <span class="currency">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="img">
+                                        <a href="product-detail.html">
+                                             <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                            alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description-area">
+                                        <a href="product-detail.html" class="product-name">Hydraulic oil HLP 46 </a>
+                                        <div class="area">
+                                            <div class="price-area">
+                                                <del class="native-price">20.00</del>
+                                                <span class="currency">$</span>
+                                                <span class="discount-value">50%</span>
+                                                    <span class="discount-price">10.00</span>
+                                                    <span class="currency">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product">
+                                    <div class="img">
+                                        <a href="product-detail.html">
+                                             <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                            alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description-area">
+                                        <a href="product-detail.html" class="product-name">Hydraulic oil HLP 46 </a>
+                                        <div class="area">
+                                            <div class="price-area">
+                                                <del class="native-price">20.00</del>
+                                                <span class="currency">$</span>
+                                                <span class="discount-value">50%</span>
+                                                    <span class="discount-price">10.00</span>
+                                                    <span class="currency">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <div class="product">
+                                    <div class="img">
+                                        <a href="product-detail.html">
+                                             <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                            alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description-area">
+                                        <a href="product-detail.html" class="product-name">Hydraulic oil HLP 46 </a>
+                                        <div class="area">
+                                            <div class="price-area">
+                                                <del class="native-price">20.00</del>
+                                                <span class="currency">$</span>
+                                                <span class="discount-value">50%</span>
+                                                    <span class="discount-price">10.00</span>
+                                                    <span class="currency">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <div class="product">
+                                    <div class="img">
+                                        <a href="product-detail.html">
+                                             <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                            alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description-area">
+                                        <a href="product-detail.html" class="product-name">Hydraulic oil HLP 46 </a>
+                                        <div class="area">
+                                            <div class="price-area">
+                                                <del class="native-price">20.00</del>
+                                                <span class="currency">$</span>
+                                                <span class="discount-value">50%</span>
+                                                    <span class="discount-price">10.00</span>
+                                                    <span class="currency">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <div class="product">
+                                    <div class="img">
+                                        <a href="product-detail.html">
+                                             <img src="./assets/img/products/1117_Hydraulik__l_HLP_46_1l_e5b1.png"
+                                            alt="">
+                                        </a>
+                                    </div>
+                                    <div class="description-area">
+                                        <a href="product-detail.html" class="product-name">Hydraulic oil HLP 46 </a>
+                                        <div class="area">
+                                            <div class="price-area">
+                                                <del class="native-price">20.00</del>
+                                                <span class="currency">$</span>
+                                                <span class="discount-value">50%</span>
+                                                    <span class="discount-price">10.00</span>
+                                                    <span class="currency">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="information-area">
+            <div class="container">
+                <h1 class="header">Vintage Cars</h1>
+                <p class="subtitle">Fountain of youth for your favorites Special solutions for special vehicles –
+                    because the highest level of care is required for classic cars through specialized lubricants.
+                </p>
+                <p>Owners of vintage and classic cars really appreciate the fascination for cars. The need to
+                    keep their beloved car in excellent condition for as long as possible - both visually and
+                    technically – is just as great.
+                </p>
+                <p>The best is just about good enough here. For the interior as well as the exterior. Negligence in
+                    maintenance and care not only reduces driving pleasure, but also the value of the precious machine.
+                    That’s why we offer you all products for ideal service and care in our Classic range. The fact that
+                    classics need special attention is demonstrated, for example, by our Classic motor oils, which are
+                    specially adapted to the requirements of vintage cars with and without oil filters.
+                </p>
+            </div>
+        </section>
+        <section id="information-area" style="background-color: #a8a8a829;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="img-area">
+                            <img class="img-fluid" src="./assets/img/areas-of-use/classic-car-range.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="header">Our classic car range</h1>
+                        <p class="subtitle">Modern care for classic treasures.</p>
+                        <p>With our classic car range, you can make your mobile treasure shine again, not only on the
+                            outside. The engine, transmission and fuel system also benefit from the care with our
+                            specially developed Classic products.
+                        </p>
+                        <a href="#">See Products</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section id="information-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="header">Do vintage and modern classics need special lubricants?</h1>
+                        <p>The motor oil that was still used when the corresponding vintage or modern classic car was
+                            manufactured has little in common with today’s lubricants. However, this does not mean that
+                            no modern lubricants area available for classic vehicles, only that they are different.
+                            David Kaiser, Development Director, reveals the difference in an interview.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="img-area">
+                            <img class="img-fluid" src="./assets/img/areas-of-use/modern-classic-car.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="information-area" style="background-color: #a8a8a829;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="img-area">
+                            <img class="img-fluid" src="./assets/img/areas-of-use/classic-car-care.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="header">Classic car care: Fountain of youth for your favorite</h1>
+                        <p>We show you how to maintain the value of your classic car in the long term.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <a href="javascript:void(0)" id="scroll-to-top" class="hover-up">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
-   <footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-sm-12 col-md-4">
@@ -315,17 +979,17 @@
                 <p>2024©</p>
             </div>
         </div>
-    </footer></body>
+    </footer>
+  
+</body>
 <!-- added slick slider js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.js"></script>
-<!-- added swiper slider -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!-- added js -->
 <script src="./assets/js/layout.js"></script>
-<script src="./assets/js/main.js"></script>
+<script src="./assets/js/area-of-use.js"></script>
 
 </html>

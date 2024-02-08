@@ -22,6 +22,7 @@ a{
   --fs-8: 4rem;
   --fs-9: 1.5rem;
   --fs-10: 10rem;
+  --fs-11: 11rem 0;
   --fs-12: 12rem;
   --fs-18: 18rem;
 
@@ -49,7 +50,8 @@ a{
 }
 
 input,
-button {
+button,
+textarea {
   outline: none;
   border: none;
 }

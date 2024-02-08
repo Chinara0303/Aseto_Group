@@ -1,0 +1,75 @@
+#contact-area {
+    padding-block: var(--section-padding);
+    font-family: var(--rubik);
+    background-color: var(--bg-color);
+}
+
+.form {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: var(--white);
+    padding: 20px;
+}
+#contact-area h2{
+    text-align: center;
+}
+.form form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+form input,
+textarea {
+    height: 35px;
+    padding: 3px 10px;
+    border-bottom: 1px solid var(--border-color);
+    transition: var(--transition-1);
+    cursor: pointer;
+}
+
+form input:hover,
+textarea:hover,
+textarea:focus,
+form input:focus {
+    border-color: var(--orange);
+}
+
+textarea:focus-visible {
+    outline: none !important;
+}
+
+form button {
+    background: var(--main-color);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 5px 40px;
+    font-weight: 600;
+    transition: var(--transition-1);
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: var(--orange);
+    color: var(--main-color);
+}
+
+textarea {
+    height: 160px;
+}
+#contact-area .contact-information{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: var(--white);
+    padding: 20px;
+}
+
+@media (max-width:576px) {
+
+    .form form input,
+    textarea {
+        width: 100%;
+
+    }
+}

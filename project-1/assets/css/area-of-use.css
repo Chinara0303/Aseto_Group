@@ -1,0 +1,218 @@
+#intro {
+    height: 400px;
+    background-color: transparent;
+    position: relative;
+}
+
+#intro img {
+    margin: 6% 0;
+}
+
+#intro .breadcrumb-area {
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    margin: 0;
+    color: var(--main-color);
+}
+
+#intro .border {
+    position: relative;
+    top: 60px;
+}
+
+#intro .breadcrumb-area p:nth-child(1) {
+    font-size: var(--fs-5);
+}
+
+#information-area {
+    padding-block: var(--section-padding);
+    font-family: var(--oswald);
+}
+
+#information-area p {
+    font-size: var(--fs-1);
+    margin-top: 10px;
+
+}
+
+#information-area .subtitle {
+    margin-bottom: 30px;
+    font-family: var(--rubik);
+}
+
+#information-area a {
+    display: inline-block;
+    margin: 10% 0;
+    border: 1px solid transparent;
+    background-color: var(--orange);
+    padding: 5px 20px;
+    color: var(--dark);
+    font-weight: 600;
+    transition: var(--transition-1);
+    border-radius: 4px;
+}
+
+#information-area a:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+#information-area .img-area img {
+    border-radius: 4px;
+}
+
+#information-area .row {
+    align-items: center;
+}
+
+#filter-area {
+    padding-block: var(--fs-11);
+}
+
+#filter-area .selection-area {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: var(--white);
+    padding: 30px;
+}
+
+#filter-area .bottom span {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#filter-area .selection-area .header {
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#filter-area .form-select {
+    cursor: pointer;
+}
+
+#filter-area .form-select:hover {
+    border-color: var(--main-color);
+}
+
+#filter-area .form-select:focus {
+    border-color: var(--main-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+.de-active-filtered-products {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#filter-area .filtered-products {
+    margin: 30px 0;
+    transition: var(--transition-1);
+}
+
+#filter-area .selection-area {
+    height: 13rem;
+    transition: var(--transition-1);
+}
+.active-height{
+    height: 40rem !important;
+}
+
+
+#filter-area .product {
+    margin-top: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 20px;
+    border-radius: 4px;
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+#filter-area .product .img img {
+    transition: var(--transition-1);
+}
+
+#filter-area .product .img:hover img {
+    transform: scale(1.1);
+}
+
+#filter-area .product .description-area {
+    margin-top: 10px;
+}
+
+#filter-area .product .product-name {
+    font-size: var(--fs-5);
+    color: var(--orange);
+    font-weight: 600;
+}
+
+#filter-area .slick-track div:nth-child(1) {
+    margin-left: 10px;
+}
+
+#filter-area .product .discount-value {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.3rem;
+    background: var(--orange);
+    color: white;
+    padding: 5px;
+    border-top-left-radius: 106px;
+    border-bottom-left-radius: 106px;
+}
+
+@media (max-width:576px) {
+    #filter-area .bottom .row {
+        gap: 10px;
+    }
+
+    #intro img {
+        margin: 40% 0 !important;
+    }
+
+    #intro .breadcrumb-area {
+        top: 16% !important;
+    }
+
+    #filter-area {
+        padding-block: var(--section-padding) !important;
+    }
+    #filter-area .selection-area {
+        height: 18rem;
+    }
+    .active-height{
+        height: 50rem !important;
+    }
+    .slick-dots{
+        margin-bottom: -42px !important;
+    }
+}
+
+@media (min-width:768px) and (max-width:1180px) {
+    #filter-area .bottom .row {
+        gap: 10px;
+    }
+
+    #intro img {
+        margin: 14% 0;
+    }
+
+    #filter-area {
+        padding-block: var(--section-padding) !important;
+    }
+
+    #information-area .img-area {
+        margin: 30px 0 !important;
+    }
+    #filter-area .selection-area {
+        height: 18rem;
+    }
+    .active-height{
+        height: 48rem !important;
+    }
+}
