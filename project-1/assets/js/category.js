@@ -6,6 +6,7 @@ let listMode = document.querySelector('.list-mode');
 listMode.addEventListener('click',function(){
     listMode.classList.add('active-mode');
     gridMode.classList.remove('active-mode');
+    
     listView.classList.remove('de-active-view');
     gridView.classList.add('de-active-view');
 })

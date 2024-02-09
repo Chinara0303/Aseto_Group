@@ -79,12 +79,12 @@
  }
 
  #our-products .products-area .product {
-     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow : var(--box-shadow-1);
      width: 94% !important;
      border-top: 1px solid var(--border-color);
      border-bottom: 1px solid var(--border-color);
      padding: 15px;
-     border-radius: 5px;
+     border-radius: var(--border-radius);
  }
 
  #our-products .products-area .product .information {
@@ -216,8 +216,8 @@
      top: 15%;
      left: 20%;
      background: var(--white);
-     border-radius: 5px;
-     box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%), 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%);
+     border-radius: var(--border-radius);
+     box-shadow: var(--box-shadow-1);
      font-family: var(--oswald);
  }
 
@@ -240,7 +240,7 @@
  }
  .fixed-modal .container-contents button{
     border: 1px solid var(--border-color);
-    border-radius: 4px;
+    border-radius: var(--border-radius);
 }
 
  .product-modal .information {
@@ -353,7 +353,7 @@
  #categories .categories-area .category a img {
      transform: scale(1.05);
      transition: var(--transition-1);
-     border-radius: 4px;
+     border-radius: var(--border-radius);
  }
 
  .category img {
@@ -410,7 +410,7 @@
  }
 
  #areas-of-use .swiper-slide {
-     border-radius: 4px;
+     border-radius: var(--border-radius);
      border: 1px solid var(--border-color);
      position: relative;
  }
@@ -430,7 +430,7 @@
 
  #areas-of-use .swiper-slide .img {
      width: 100%;
-     border-radius: 4px;
+     border-radius: var(--border-radius);
  }
 
  #areas-of-use .swiper-slide a {
@@ -489,7 +489,7 @@
  }
 
  #blog .blog-box {
-     border-radius: 4px;
+     border-radius: var(--border-radius);
      margin-bottom: 30px;
  }
 
@@ -497,14 +497,14 @@
      padding: 20px;
      position: relative;
      background: white;
-     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-     border-radius: 4px;
+     box-shadow: var(--box);
+     border-radius: var(--border-radius);
      margin-block-start: -50px;
      margin-inline-start: 30px;
  }
 
  #blog .blog-box .img img {
-     border-radius: 4px;
+     border-radius: var(--border-radius);
  }
 
  #blog .show-more-btn {

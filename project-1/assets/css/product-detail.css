@@ -4,7 +4,7 @@
 }
 
 #single-product .img-area {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: var(--box-shadow-1);
     height: 400px;
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@
     height: 36px;
     padding: 5px 10px;
     border: 1px solid var(--main-color);
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     transition: var(--transition-1);
 }
 
@@ -83,7 +83,7 @@
     top: 20%;
     left: 30%;
     background: white;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
 }
 
 .zoom-modal img {
@@ -114,7 +114,7 @@
 .accordion-area {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     padding: 20px;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
 }
 
 .accordion-area .accordion .accordion-item {
@@ -131,7 +131,7 @@
     justify-content: space-between;
     width: 50%;
     color: var(--main-color);
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     font-size: var(--fs-7);
 }
 
@@ -204,12 +204,12 @@ td {
 }
 
 .products-area .product {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow:var(--box-shadow-1);
     width: 94% !important;
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
     padding: 15px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 .products-area .product .information {

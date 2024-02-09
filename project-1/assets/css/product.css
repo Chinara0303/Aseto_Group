@@ -1,7 +1,7 @@
 .area .codes .container-content {
     border: 1px solid var(--border-color);
     padding: 5px 10px;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
 }
 
 .area .title {
@@ -15,7 +15,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 15px;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
 }
 
 #single-product .product-name {
@@ -38,7 +38,6 @@
     color: red;
 }
 
-
 .area .codes {
     margin-left: 10px;
 }
@@ -57,7 +56,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid #0000003b;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     transition: var(--transition-1);
     margin-bottom: 15px;
 }
@@ -67,3 +66,4 @@
 .area.contents .title{
     margin-bottom: 10px;
 }
+

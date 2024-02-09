@@ -50,7 +50,7 @@
     color: var(--dark);
     font-weight: 600;
     transition: var(--transition-1);
-    border-radius: 4px;
+    border-radius: var(--border-radius);
 }
 
 #information-area a:hover {
@@ -59,7 +59,7 @@
 }
 
 #information-area .img-area img {
-    border-radius: 4px;
+    border-radius: var(--border-radius);
 }
 
 #information-area .row {
@@ -71,7 +71,7 @@
 }
 
 #filter-area .selection-area {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: var(--box-shadow-1);
     background-color: var(--white);
     padding: 30px;
 }
@@ -124,9 +124,9 @@
 
 #filter-area .product {
     margin-top: 30px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: var(--box-shadow-1);
     padding: 20px;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     overflow-x: hidden;
     position: relative;
 

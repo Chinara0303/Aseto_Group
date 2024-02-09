@@ -1,0 +1,133 @@
+#blog-detail {
+    padding-block: var(--section-padding);
+    font-family: var(--rubik);
+}
+
+#blog-detail .single-blog .img img {
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+#blog-detail .single-blog .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#blog-detail .single-blog .top li {
+    font-size: var(--fs-5);
+    font-weight: 400;
+}
+
+#blog-detail .single-blog .top li span {
+    text-transform: uppercase;
+
+}
+
+#blog-detail .single-blog .top li span:nth-child(2) {
+    margin-left: 20px;
+}
+
+#blog-detail .single-blog {
+    box-shadow: var(--box-shadow-1);
+    border-radius: var(--border-radius);
+}
+
+#blog-detail .single-blog .content {
+    padding: 20px;
+}
+
+#blog-detail .single-blog .content p {
+    margin: 15px 0;
+}
+
+#blog-detail .single-blog .advantages {
+    margin-left: 40px;
+}
+
+#blog-detail .single-blog .advantages li {
+    list-style-type: disc;
+}
+
+#blog-detail .sidebar-area .recent-posts li {
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px;
+    display: flex;
+}
+
+#blog-detail .sidebar-area {
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+#blog-detail .sidebar-area h4 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#blog-detail .sidebar-area .recent-posts li a {
+    width: 30%;
+}
+
+#blog-detail .sidebar-area .recent-posts li img {
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+#blog-detail .sidebar-area .recent-posts li .content .blog-name {
+    color: var(--main-color);
+    font-size: var(--fs-5);
+    font-weight: 600;
+}
+
+#blog-detail .sidebar-area .recent-posts li .content {
+    margin-left: 20px;
+}
+
+.cat-name {
+    color: var(--span-color);
+}
+
+.ul li {
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0;
+}
+
+.ul li a {
+    margin-left: 15px;
+    transition: var(--transition-1);
+    color: var(--dark);
+}
+
+.ul li:hover a {
+    color: var(--orange);
+}
+
+.categories .category-name,
+.areas-of-use .name {
+    text-transform: uppercase;
+}
+
+@media (min-width:768px) and (max-width:1180px) {
+    #blog-detail .single-blog .img {
+        margin: 10px 0;
+    }
+    .sidebar-area{
+        margin-top: 30px ;
+    }
+}
+
+@media (max-width:576px) {
+    #blog-detail .single-blog .top li {
+        font-size: var(--fs-1);
+    }
+
+    #blog-detail .single-blog .img {
+        margin: 10px 0;
+    }
+    .sidebar-area{
+        margin-top: 30px ;
+    }
+}
