@@ -120,14 +120,14 @@
 }
 
 @media (max-width:576px) {
-    #blog-detail .single-blog .top li {
-        font-size: var(--fs-1);
-    }
 
     #blog-detail .single-blog .img {
         margin: 10px 0;
     }
     .sidebar-area{
         margin-top: 30px ;
+    }
+    #blog-detail .top{
+        display: initial !important;
     }
 }

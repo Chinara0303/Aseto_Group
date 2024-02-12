@@ -67,6 +67,9 @@
     cursor: pointer;
 }
 
+.slick-arrow{
+    display: none !important;
+}
 .fixed-zoom-modal {
     position: fixed;
     left: 0;

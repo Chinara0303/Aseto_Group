@@ -26,8 +26,7 @@ select3.addEventListener("change", function () {
 
 $('.recommend-products').slick({
     dots: true,
-    infinite: false,
-    speed: 300,
+    speed: 3000,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay:true,
@@ -38,8 +37,6 @@ $('.recommend-products').slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                dots: true,
-                
             }
         },
         {

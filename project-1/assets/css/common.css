@@ -1,24 +1,26 @@
 /* intro */
-#intro{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    font-family: var(--oswald);
-    padding-block: var(--section-padding);
-    background-color: var(--main-color);
-}
-#intro .breadcrumb-area{
-    color: var(--main-color);
-    margin: 4% 0;
-    text-transform: capitalize;
-    color: var(--white);
-}
-#intro .breadcrumb-area p:nth-child(1){
-    font-size: var(--fs-2);
+#intro {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  font-family: var(--oswald);
+  padding-block: var(--section-padding);
+  background-color: var(--main-color);
 }
 
+#intro .breadcrumb-area {
+  margin: 4% 0;
+  text-transform: capitalize;
+  color: var(--white);
+}
 
+#intro .breadcrumb-area p:nth-child(1) {
+  font-size: var(--fs-2);
+}
+#intro .breadcrumb-area a{
+  color: var(--white);
+}
 
 .overlay {
   position: fixed;
@@ -30,79 +32,84 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  z-index: 4;
   cursor: pointer;
 
 }
 
 /* scroll to top */
 #scroll-to-top {
-    background-color: var(--main-color);
-    right: 30px;
-    bottom: 30px;
-    width: 32px;
-    height: 32px;
-    padding: 15px;
-    border-radius: 30px;
-    position: fixed;
-    text-align: center;
-    text-decoration: none;
-    z-index: 2;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-  }
-  
-  #scroll-to-top i {
-    color: var(--white);
-    font-size: 18px;
-  }
-  
-  .hover-up {
-    transition: var(--transition-1);
-  }
-  
-  .hover-up:hover {
-    transform: translateY(-5px);
-  }
-
-  .pagination{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.page-item{
-    width: 40px;
-    height: 40px;
-    text-align: center;
-}
-.page-item .page-link{
-    border-radius: 50% !important;
-    color: var(--white);
-    background-color: var(--main-color);
-    font-size: 18px;
-    transition: var(--transition-1);
-}
-.page-item .page-link:hover{
-    background-color: var(--orange);
-    color: var(--main-color);
+  background-color: var(--main-color);
+  right: 30px;
+  bottom: 30px;
+  width: 32px;
+  height: 32px;
+  padding: 15px;
+  border-radius: 30px;
+  position: fixed;
+  text-align: center;
+  text-decoration: none;
+  z-index: 2;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
 }
 
-.page-link:focus{
-    box-shadow: none !important;
+#scroll-to-top i {
+  color: var(--white);
+  font-size: 18px;
+}
+
+.hover-up {
+  transition: var(--transition-1);
+}
+
+.hover-up:hover {
+  transform: translateY(-5px);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-item {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.page-item .page-link {
+  border-radius: 50% !important;
+  color: var(--white);
+  background-color: var(--main-color);
+  font-size: 18px;
+  transition: var(--transition-1);
+}
+
+.page-item .page-link:hover {
+  background-color: var(--orange);
+  color: var(--main-color);
+}
+
+.page-link:focus {
+  box-shadow: none !important;
 }
 
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 5px;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: var(--orange);
   border-radius: var(--border-radius);
 }
+
 .headline {
   text-align: center;
   font-family: var(--oswald);
@@ -136,30 +143,37 @@
   width: 7%;
   height: 2px;
 }
+
 @media (max-width:576px) {
-  #intro {
-    height: 175px;
-  }  
   #intro .breadcrumb-area {
     padding: 30px 0;
   }
-  #intro .breadcrumb-area p:nth-child(1){
+
+  #intro .breadcrumb-area p:nth-child(1) {
     font-size: var(--fs-9);
   }
-  #intro .breadcrumb-area p:nth-child(2){
-    font-size: var(--fs-5);
+
+  #intro .breadcrumb-area p:nth-child(2) {
+    font-size: var(--fs-1);
   }
+
   .headline .title {
     font-size: var(--fs-6) !important;
-}
+  }
 
-.headline .title::before {
+  .headline .title::before {
     left: 0 !important;
     width: 17%;
-}
+  }
 
-.headline .title::after {
+  .headline .title::after {
     right: 0 !important;
     width: 17%;
+  }
 }
+
+@media (min-width:768px) and (max-width:1180px) {
+    #intro {
+      height: 170px;
+    }
 }

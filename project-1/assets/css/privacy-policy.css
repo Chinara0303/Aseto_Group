@@ -1,0 +1,6 @@
+#privacy-policy{
+    padding-block: var(--section-padding);
+}
+#privacy-policy .content{
+    margin: 15px 0;
+}

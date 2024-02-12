@@ -13,6 +13,9 @@
     top: 23%;
     left: 10%;
     margin: 0;
+}
+#intro .breadcrumb-area a,
+#intro .breadcrumb-area p{
     color: var(--main-color);
 }
 
@@ -129,7 +132,8 @@
     border-radius: var(--border-radius);
     overflow-x: hidden;
     position: relative;
-
+    width: 95% !important;
+    margin-left: 10px ;
 }
 
 #filter-area .product .img img {
@@ -150,9 +154,6 @@
     font-weight: 600;
 }
 
-#filter-area .slick-track div:nth-child(1) {
-    margin-left: 10px;
-}
 
 #filter-area .product .discount-value {
     position: absolute;
@@ -170,7 +171,14 @@
     #filter-area .bottom .row {
         gap: 10px;
     }
-
+    #filter-area .product .description-area {
+        text-align: center;
+    }
+    #filter-area .product .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     #intro img {
         margin: 40% 0 !important;
     }

@@ -15,16 +15,14 @@ $(function () {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             },
@@ -35,13 +33,9 @@ $(function () {
                     slidesToScroll: 1,
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
+     
         ]
     });
-
-
 
     //modal
     $(document).on("click", ".learn-more-area", function (e) {
@@ -65,25 +59,27 @@ $(function () {
 
 
 // tab menu
-var tabMenus = document.querySelectorAll(".tab-menu-heading");
-var contents = document.querySelectorAll("#our-products .content");
+let tabMenus = document.querySelectorAll(".tab-menu-heading");
+let contents = document.querySelectorAll("#our-products .content");
 
 for (var tabMenu of tabMenus) {
     tabMenu.addEventListener("click", function () {
         let index = this.getAttribute("data-index");
         document.querySelector(".tab-menu .active").classList.remove("active");
         this.classList.add("active");
-
+       
         for (let content of contents) {
-            content.classList.add("d-none");
+            content.classList.add("de-active-content");
             if (content.getAttribute("data-index") === index) {
-                content.classList.remove("d-none");
+                content.classList.remove("de-active-content");
+                content.style.transition = ".3s linear"
+                 if(index != 1){
+                    content.style.marginTop = "-26rem"
+                }
             }
         }
     });
 }
-
-
 
 
 //swiper slider for products

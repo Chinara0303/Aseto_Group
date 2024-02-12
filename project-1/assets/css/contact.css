@@ -58,6 +58,7 @@ textarea:focus-visible {
 
 textarea {
     height: 160px;
+    width: 100%;
 }
 #contact-area .contact-information{
     box-shadow: var(--box-shadow-1);

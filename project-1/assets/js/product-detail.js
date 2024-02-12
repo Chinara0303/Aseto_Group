@@ -107,7 +107,7 @@ let modalArea = document.querySelector('.zoom-modal-area img');
 let zoomIcon = document.querySelector('.zoom');
 let fixedZoomModal = document.querySelector(".fixed-zoom-modal");
 let closeIcon = document.querySelector(".zoom-modal .close-icon");
-let body = document.querySelector("body");
+
 zoomIcon.addEventListener("click", function () {
     let src = this.previousElementSibling.getAttribute("src");
     modalArea.setAttribute('src', src);
