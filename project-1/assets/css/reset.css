@@ -12,6 +12,7 @@ a{
 }
 :root {
   /* font-sizes */
+  --fs-0:0.8rem;
   --fs-1: 1rem;
   --fs-2: 2rem;
   --fs-3: 3rem;

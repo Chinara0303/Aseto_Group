@@ -14,8 +14,9 @@
     left: 10%;
     margin: 0;
 }
+
 #intro .breadcrumb-area a,
-#intro .breadcrumb-area p{
+#intro .breadcrumb-area p {
     color: var(--main-color);
 }
 
@@ -92,16 +93,12 @@
     margin-bottom: 20px;
 }
 
-#filter-area .form-select {
-    cursor: pointer;
+.form-select:hover {
+    border-color: var(--orange);
 }
 
-#filter-area .form-select:hover {
-    border-color: var(--main-color);
-}
-
-#filter-area .form-select:focus {
-    border-color: var(--main-color);
+.form-select:focus {
+    border-color: var(--orange);
     outline: 0;
     box-shadow: none;
 }
@@ -120,10 +117,10 @@
     height: 13rem;
     transition: var(--transition-1);
 }
-.active-height{
+
+.active-height {
     height: 40rem !important;
 }
-
 
 #filter-area .product {
     margin-top: 30px;
@@ -133,7 +130,7 @@
     overflow-x: hidden;
     position: relative;
     width: 95% !important;
-    margin-left: 10px ;
+    margin-left: 10px;
 }
 
 #filter-area .product .img img {
@@ -154,7 +151,6 @@
     font-weight: 600;
 }
 
-
 #filter-area .product .discount-value {
     position: absolute;
     top: 0;
@@ -171,14 +167,17 @@
     #filter-area .bottom .row {
         gap: 10px;
     }
+
     #filter-area .product .description-area {
         text-align: center;
     }
+
     #filter-area .product .img {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     #intro img {
         margin: 40% 0 !important;
     }
@@ -190,13 +189,16 @@
     #filter-area {
         padding-block: var(--section-padding) !important;
     }
+
     #filter-area .selection-area {
         height: 18rem;
     }
-    .active-height{
+
+    .active-height {
         height: 50rem !important;
     }
-    .slick-dots{
+
+    .slick-dots {
         margin-bottom: -42px !important;
     }
 }
@@ -217,10 +219,12 @@
     #information-area .img-area {
         margin: 30px 0 !important;
     }
+
     #filter-area .selection-area {
         height: 18rem;
     }
-    .active-height{
+
+    .active-height {
         height: 48rem !important;
     }
 }

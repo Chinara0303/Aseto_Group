@@ -16,6 +16,8 @@
     <!-- added boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- added aos -->
+    <link rel="stylesheet" href="./assets/aos/aos-master/dist/aos.css">
     <!-- added css -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
@@ -27,7 +29,7 @@
 <body>
     <div class="overlay"></div>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">
             <div class="row header-area">
                 <div class="col-lg-2 col-md-1 col-6">
                     <div class="logo">
@@ -37,7 +39,7 @@
                 <div class="col-lg-8 col-md-8 d-none d-md-block d-lg-block">
                     <nav class="navbar-area">
                         <ul>
-                            <li><a class="active-nav" href="index.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li class="menu">
                                 <div>
@@ -119,12 +121,12 @@
                             </button>
                         </div>
                         <div class="languages d-lg-block d-md-block d-none">
-                            <ul>
+                             <ul>
                                 <li>
-                                    <img src="./assets/img/fr_fr.gif" alt="">
+                                    <img src="./assets/img/azerbaijan_flag.PNG" alt="">
                                 </li>
                                 <li>
-                                    <img src="./assets/img/fa_ir.gif" alt="">
+                                    <img src="./assets/img/russia_flag.PNG" alt="">
                                 </li>
                                 <li>
                                     <img src="./assets/img/en_gb.gif" alt="">
@@ -331,10 +333,9 @@
             </div>
         </div>
     </header>
-
     <main>
         <section id="intro">
-            <div class="container">
+            <div class="container" data-aos="fade-right" data-aos-duration="2000">
                 <div class="breadcrumb-area">
                     <p class="section-name">Privacy policy</p>
                     <p>
@@ -346,37 +347,44 @@
             </div>
         </section>
         <section id="privacy-policy">
-            <div class="container">
-                <div class="content">
+            <div class="container" >
+                <div class="content" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"
+                data-aos-easing="linear">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit impedit explicabo mollitia
                         facilis. Nulla, architecto facere? Voluptatem nobis ipsum inventore explicabo? Temporibus illum
                         unde consectetur officiis animi! Mollitia, molestias libero.
                     </p>
                 </div>
-                <div class="content-header">
+                <div class="content-header" data-aos="fade-right" data-aos-once="true" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"
+                data-aos-easing="linear">
                     <h4>Lorem, ipsum.</h4>
                 </div>
-                <div class="content">
+                <div class="content" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"
+                data-aos-easing="linear">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in obcaecati aperiam provident,
                         harum nulla libero saepe impedit maiores optio laboriosam ab, adipisci vero accusamus ullam
                         aliquam sit! Iure laborum fuga nulla unde tenetur? Maxime molestias earum dolorum reiciendis
                         harum?
                     </p>
                 </div>
-                <div class="content-header">
+                <div class="content-header" data-aos="fade-right" data-aos-once="true" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"
+                data-aos-easing="linear">
                     <h4>Lorem, ipsum dolor.</h4>
                 </div>
-                <div class="content">
+                <div class="content" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"
+                data-aos-easing="linear">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in obcaecati aperiam provident,
                         harum nulla libero saepe impedit maiores optio laboriosam ab, adipisci vero accusamus ullam
                         aliquam sit! Iure laborum fuga nulla unde tenetur? Maxime molestias earum dolorum reiciendis
                         harum epe impedit maiores optio laboriosam ab, adipisci vero ?
                     </p>
                 </div>
-                <div class="content-header">
+                <div class="content-header" data-aos="fade-right" data-aos-once="true" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"
+                data-aos-easing="linear">
                     <h4>Lorem, ipsum dolor.</h4>
                 </div>
-                <div class="content">
+                <div class="content" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"
+                data-aos-easing="linear">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in obcaecati aperiam provident,
                         harum nulla libero saepe impedit maiores optio laboriosam ab, adipisci vero accusamus ullam
                         aliquam sit! Iure laborum fuga nulla unde tenetur? Maxime molestias earum dolorum reiciendis
@@ -387,19 +395,21 @@
         </section>
     </main>
 
-    <a href="javascript:void(0)" id="scroll-to-top" class="hover-up">
+    <a href="javascript:void(0)" id="scroll-to-top" class="hover-up" data-aos="fade-up" data-aos-duration="1500"
+        data-aos-easing="linear">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-sm-12 col-md-4">
-                    <div class="logo">
+                    <div class="logo" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
                         <img class="img-fluid" src="./assets/img/logo-pardis.png" alt="">
                     </div>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti rem, quia
+                    <p class="text" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Eligendi corrupti rem, quia
                         ut eveniet pariatur laboriosam veritatis odit maiores sint?</p>
-                    <ul class="social-links">
+                    <ul class="social-links" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
                         <li>
                             <a href="#">
                                 <i class="fa-brands fa-instagram fa-xl"></i>
@@ -423,8 +433,8 @@
                     </ul>
                 </div>
                 <div class="col-lg-4 col-sm-12 col-md-4">
-                    <p class="text-title">QUICK LINKS</p>
-                    <ul class="quick-links">
+                    <p class="text-title" data-aos="fade-right" data-aos-duration="2000">QUICK LINKS</p>
+                    <ul class="quick-links" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
                         <li><a href="about.html">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
@@ -433,17 +443,17 @@
                     </ul>
                 </div>
                 <div class="col-lg-4 col-sm-12 col-md-4">
-                    <p class="text-title">Join us</p>
-                    <form action="#">
+                    <p class="text-title" data-aos="fade-right" data-aos-duration="2000">Join us</p>
+                    <form action="#" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
                         <input type="text" placeholder="Enter email">
                         <button type="submit"><i class="fa-regular fa-paper-plane fa-xl"></i></button>
                     </form>
 
-                    <div class="contact-area">
+                    <div class="contact-area" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
                         <i class="fa-regular fa-envelope fa-lg"></i>
                         <a class="content" href="mailto:pardis@gmail.com">pardis@gmail.com</a>
                     </div>
-                    <div class="contact-area">
+                    <div class="contact-area" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
                         <i class="fa-solid fa-phone-volume fa-lg"></i>
                         <a class="content" href="tel:1234567">11234567</a>
                     </div>
@@ -455,7 +465,9 @@
         </div>
     </footer>
 </body>
-
+<!-- added aos -->
+<script src="./assets/aos/aos-master/dist/aos.js"></script>
+<!-- added js -->
 <script src="./assets/js/layout.js"></script>
 
 </html>

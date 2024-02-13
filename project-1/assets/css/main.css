@@ -77,79 +77,6 @@
     left: -40px;
 }
 
-#our-products .products-area .product {
-    box-shadow: var(--box-shadow-1);
-    width: 96% !important;
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    padding: 15px;
-    border-radius: var(--border-radius);
-    margin-left: 10px;
-}
-
-#our-products .products-area .product .img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#our-products .products-area .product .information {
-    margin-top: 20px;
-    height: var(--fs-10);
-}
-
-#our-products .products-area .product .information .name {
-    text-transform: capitalize;
-    margin-top: 10px;
-    color: rgba(0, 0, 0, 0.69);
-    font-size: var(--fs-5);
-    font-weight: 600;
-}
-
-#our-products .products-area .product .information .price {
-    font-size: var(--fs-7);
-    margin: 10px 0;
-}
-
-#our-products .products-area .product .information .price :last-child {
-    margin-left: -4px !important;
-}
-
-#our-products .products-area .product .information .category-name {
-    text-transform: capitalize;
-    color: var(--span-color);
-}
-
-#our-products .products-area .product .information .learn-more-area {
-    cursor: pointer;
-}
-
-#our-products .products-area .product .information .learn-more {
-    color: var(--main-color);
-    font-size: var(--fs-1);
-    font-weight: 600;
-    transition: var(--transition-1);
-    margin-left: -16px;
-    display: inline-block;
-}
-
-#our-products .products-area .product .information .learn-more-area i {
-    transform: translateX(-16px);
-    transition: var(--transition-1);
-    color: var(--white);
-}
-
-#our-products .products-area .product .information .learn-more-area:hover .learn-more {
-    color: var(--orange);
-    margin-left: 0;
-}
-
-#our-products .products-area .product .information .learn-more-area:hover i {
-    transform: translateX(0);
-    color: var(--orange);
-}
-
-
 #our-products .tab-menu {
     display: flex;
     align-items: center;
@@ -612,6 +539,9 @@
     .container-contents .buttons {
         width: inherit;
     }
+    #areas-of-use .info{
+        margin-bottom: 30px;
+    }
 }
 
 @media (min-width:768px) and (max-width:1180px) {
@@ -645,4 +575,7 @@
         top: 7%;
     }
 
+    #areas-of-use .info{
+        margin-bottom: 30px;
+    }
 }

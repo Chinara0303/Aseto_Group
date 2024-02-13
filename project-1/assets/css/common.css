@@ -3,14 +3,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 170px;
   font-family: var(--oswald);
   padding-block: var(--section-padding);
   background-color: var(--main-color);
 }
 
 #intro .breadcrumb-area {
-  margin: 4% 0;
+  margin: 2% 0;
   text-transform: capitalize;
   color: var(--white);
 }
@@ -18,7 +18,8 @@
 #intro .breadcrumb-area p:nth-child(1) {
   font-size: var(--fs-2);
 }
-#intro .breadcrumb-area a{
+
+#intro .breadcrumb-area a {
   color: var(--white);
 }
 
@@ -61,14 +62,12 @@
 #scroll-to-top i {
   color: var(--white);
   font-size: 18px;
-}
-
-.hover-up {
   transition: var(--transition-1);
+
 }
 
-.hover-up:hover {
-  transform: translateY(-5px);
+#scroll-to-top:hover i {
+  transform: translateY(-3px);
 }
 
 .pagination {
@@ -144,6 +143,37 @@
   height: 2px;
 }
 
+.form-select {
+  cursor: pointer;
+}
+
+label {
+  display: block;
+}
+
+
+@keyframes oil {
+  0% {
+    transform: translateY(100px);
+  }
+
+  25% {
+    transform: translateY(150px);
+  }
+
+  50% {
+    transform: translateY(200px);
+  }
+
+  75% {
+    transform: translateY(250px);
+  }
+
+  100% {
+    transform: translateY(300px);
+  }
+}
+
 @media (max-width:576px) {
   #intro .breadcrumb-area {
     padding: 30px 0;
@@ -173,7 +203,7 @@
 }
 
 @media (min-width:768px) and (max-width:1180px) {
-    #intro {
-      height: 170px;
-    }
+  #intro {
+    height: 170px;
+  }
 }

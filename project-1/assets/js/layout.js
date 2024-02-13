@@ -73,10 +73,14 @@ for (let i = 0; i < openSubmenues.length; i++) {
     })
 }
 
-
+window.addEventListener("load", function(){
+    AOS.init()
+});
 // scroll to top button
 let scrollToTop = document.getElementById('scroll-to-top')
 window.addEventListener('scroll', function () {
+    AOS.init();
+
     if (window.pageYOffset > 400) {
         scrollToTop.style.opacity = '1';
         scrollToTop.style.visibility = 'visible';
