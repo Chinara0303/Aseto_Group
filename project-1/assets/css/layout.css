@@ -9,10 +9,13 @@ header {
     z-index: 4;
 }
 
-.logo {
+header .logo {
+    width: 100px;
+    height: 60px;
+}
+footer .logo{
     width: 100px;
 }
-
 .header-area {
     align-items: center !important;
 }
@@ -32,7 +35,6 @@ header {
 .menu-side ul li span,
 .menu-side ul li i {
     color: var(--black);
-    opacity: .7;
     transition: var(--transition-1);
     cursor: pointer;
     display: inline-block;
@@ -47,19 +49,19 @@ header nav ul li a,
 header nav ul li span,
 header nav ul li i {
     color: var(--white);
-    opacity: .7;
     transition: var(--transition-1);
     cursor: pointer;
 }
 
 header ul li:hover a {
-    color: var(--orange);
+    color: var(--white);
     opacity: 1;
 }
 
 .active-nav {
     color: var(--orange) !important;
     opacity: 1 !important;
+    font-weight: bold;
 }
 
 a:hover {
@@ -95,7 +97,6 @@ a:hover {
 
 .second-line {
     transition: var(--transition-1);
-
 }
 
 .active-line {
@@ -162,7 +163,6 @@ header .right-area {
     cursor: pointer;
     border-bottom: 1px solid var(--white);
     color: var(--white);
-    opacity: .7;
     transition: var(--transition-1);
 }
 
@@ -305,7 +305,6 @@ header .de-active-filtered-products {
     height: 2px;
     width: 27px;
     background-color: var(--white);
-    opacity: .7;
     margin: 4px 0;
 }
 
@@ -371,7 +370,6 @@ footer {
 
 footer .text {
     color: var(--white);
-    opacity: .7;
     margin: 15px 0;
     text-align: justify;
 }
@@ -381,19 +379,18 @@ footer .text {
 }
 
 .social-links li:hover i {
-    color: var(--orange);
+    color: var(--white);
     opacity: 1;
 }
 
 footer .social-links li i {
     color: var(--white);
-    opacity: .7;
     cursor: pointer;
     transition: var(--transition-1);
 }
 
 footer .text-title {
-    color: var(--orange);
+    color: var(--white);
     font-size: var(--fs-7);
     font-weight: 700;
     text-align: center;
@@ -422,15 +419,17 @@ footer .quick-links li {
     justify-content: center;
     transition: var(--transition-1);
 }
+footer .quick-links li a{
+    font-weight: bold;
 
+}
 footer .quick-links li:hover a {
-    color: var(--orange);
+    color: var(--white);
     opacity: 1;
 }
 
 footer .quick-links li a {
     color: var(--white);
-    opacity: .7;
     line-height: 1.8;
 }
 
@@ -485,7 +484,6 @@ footer form button i {
     align-items: center;
     justify-content: end;
     color: var(--white);
-    opacity: .7;
     margin-top: 10px;
     transition: var(--transition-1);
 }
@@ -500,7 +498,6 @@ footer form button i {
     font-size: var(--fs-7);
     margin-left: 10px;
     color: var(--white);
-    opacity: .7;
 }
 
 .menu-side .contact-area,
@@ -517,7 +514,6 @@ footer .copyright {
     text-align: center;
     margin-top: 70px;
     color: var(--white);
-    opacity: .7;
 }
 
 footer .copyright p {
@@ -536,6 +532,7 @@ footer .copyright p {
     footer .text-title::after {
         left: 0 !important;
     }
+
     .search-area form input {
         width: 90%;
     }
@@ -545,6 +542,7 @@ footer .copyright p {
     header .navbar-area ul li {
         margin-right: 30px;
     }
+
     .search-area form input {
         width: 50% !important;
     }

@@ -12,14 +12,34 @@
 }
 
 #introduction .slider-area .slider .content {
-    width: 85%;
+    width: 92%;
     margin: 18% auto;
 }
-
+#introduction .slick-dots{
+    display: none !important;
+}
+#introduction .slick-arrow{
+    z-index: 999;
+    
+}
+#introduction .slick-prev{
+    transform: translate(50%, 50%);
+    top: 88%;
+    left: 47%;
+}
+#introduction .slick-next{
+    transform: translate(50%, 50%);
+    top: 88%;
+    left: 50%;
+}
+#introduction .slick-arrow::before{
+    color: var(--white) !important;
+}
 #introduction .slider-area .slider .content p {
     font-size: var(--fs-2);
     color: var(--white);
-    width: 60%;
+    width: 40%;
+    text-transform: uppercase;
 }
 
 #introduction .slider-area .slider .content a {
@@ -67,7 +87,7 @@
     font-family: var(--rubik);
 }
 
-#our-products .slick-next:before,
+.slick-next:before,
 .slick-prev:before {
     font-size: 30px;
     color: var(--orange);

@@ -29,7 +29,7 @@ a{
 
 
   /* colors */
-  --main-color: #4F6475;
+  --main-color:#01774C;
   --white: #fff;
   --black: #000;
   --border-color: #e2e1e1a8;
@@ -41,7 +41,6 @@ a{
   /* font-family */
   --oswald: "Oswal", sans-serif;
   --rubik: "Rubik", sans-serif;
-
 
   /*  transition */
   --transition-1: all .3s ease-in-out;
